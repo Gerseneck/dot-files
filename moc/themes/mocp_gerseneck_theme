@@ -1,0 +1,46 @@
+#############################################################################
+# ██████╗ ███████╗██████╗ ███████╗███████╗███╗   ██╗███████╗ ██████╗██╗  ██╗#
+#██╔════╝ ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║██╔════╝██╔════╝██║ ██╔╝#
+#██║  ███╗█████╗  ██████╔╝███████╗█████╗  ██╔██╗ ██║█████╗  ██║     █████╔╝ #
+#██║   ██║██╔══╝  ██╔══██╗╚════██║██╔══╝  ██║╚██╗██║██╔══╝  ██║     ██╔═██╗ #
+#╚██████╔╝███████╗██║  ██║███████║███████╗██║ ╚████║███████╗╚██████╗██║  ██╗#
+# ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝╚══════╝ ╚═════╝╚═╝  ╚═╝#
+#############################################################################
+
+# Gerseneck's Music On Consol Player Theme
+
+background           = blue    black
+frame                = magenta black
+window_title         = white   black   bold
+directory            = blue    black   bold
+selected_directory   = green   black   bold,reverse
+playlist             = blue    green   bold
+selected_playlist    = blue    black   bold,reverse
+file                 = blue    black
+selected_file        = green   black
+marked_file          = blue    black   bold
+marked_selected_file = green   black   bold
+info                 = red     black   bold
+selected_info        = green   black   bold
+marked_info          = blue    black   bold
+marked_selected_info = green   black   bold
+status               = magenta black
+title                = white   black   bold
+state                = magenta black   bold
+current_time         = cyan    black   bold
+time_left            = blue    black   bold
+total_time           = red     black   bold
+time_total_frames    = magenta black
+sound_parameters     = yellow  black   bold
+legend               = yellow  black
+disabled             = white   black   bold
+enabled              = blue    black   bold
+empty_mixer_bar      = white   black
+filled_mixer_bar     = black   white
+empty_time_bar       = black   black
+filled_time_bar      = black   white
+entry                = white   black
+entry_title          = white   black
+error                = red     black   bold
+message              = green   black   bold
+plist_time           = white   black   bold
