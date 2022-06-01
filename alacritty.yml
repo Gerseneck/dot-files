@@ -60,7 +60,7 @@ colors:
 
 # Font configuration
 font:
-  # Normal (roman) font face
+  # fonts go in ~/.local/share/fonts
   normal:
     family: JetBrainsMono Nerd Font
     style: Regular
