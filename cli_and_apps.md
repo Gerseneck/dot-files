@@ -52,6 +52,7 @@
 - VLC
 - OBS
 - Stacer (System Cleaner)
+- ULauncher (application launcher)
 
 ## Other
 - indicator-multiload 
