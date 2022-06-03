@@ -3,12 +3,13 @@
 
 ## Table of Contents
 - [Command Line Applications](#cli-apps)
-- [Desktop Enviorments](#desktop-enviroment)
+- [Desktop Enviorments](#desktop-enviroments)
 - [Package Managers](#package-managers)
 - [Gui Applications](#gui-apps)
 - [Other](#other)
 
 ## Cli Apps
+- nano (GNU nano - text editor of choice)
 - btop (better top)
 - ranger (cli file manager)
 - htop (another top)
@@ -27,6 +28,8 @@
 - moc (mocp) (music-player)
 	- moc-ffmpeg-plugin (mp4 support)
 - fasttyper (pip install fasttyper)
+- lsd (lsdeleux - better ls command)
+- [ASCIIquarium](https://github.com/cmatsuoka/asciiquarium) (fun stuff)
 
 ## Desktop Enviroments
 - Gnome
