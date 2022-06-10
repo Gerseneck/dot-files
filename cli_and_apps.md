@@ -31,6 +31,7 @@
 - lsd (lsdeleux - better ls command)
 - [ASCIIquarium](https://github.com/cmatsuoka/asciiquarium) (fun stuff)
 - crontab (crontab -e)
+- [pastel](https://github.com/sharkdp/pastel) (color management)
 
 ## Desktop Enviroments
 - Gnome
