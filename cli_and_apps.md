@@ -57,6 +57,6 @@
 - ULauncher (application launcher)
 
 ## Other
-- indicator-multiload 
+- indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg,2))]`)
 - alacritty (GPU based terminal emulator)
 - synth-shell (terminal beautification)
