@@ -32,6 +32,7 @@
 - [ASCIIquarium](https://github.com/cmatsuoka/asciiquarium) (fun stuff)
 - crontab (crontab -e)
 - [pastel](https://github.com/sharkdp/pastel) (color management)
+- [UxPlay](https://github.com/antimof/UxPlay) (phone casting)
 
 ## Desktop Enviroments
 - Gnome
@@ -57,6 +58,6 @@
 - ULauncher (application launcher)
 
 ## Other
-- indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg,2))]`)
+- indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg, 2))]`)
 - alacritty (GPU based terminal emulator)
 - synth-shell (terminal beautification)
