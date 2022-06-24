@@ -25,6 +25,7 @@
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (better yt-dl)
 - gpg (signing commits)
 - git (push / pull from github)
+- ffmpeg (useful stuff)
 - moc (mocp) (music-player)
 	- moc-ffmpeg-plugin (mp4 support)
 - fasttyper (pip install fasttyper)
