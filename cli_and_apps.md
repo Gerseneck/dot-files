@@ -38,7 +38,7 @@
 - tty-clock (terminal clock)
 - [speedtest-cli](https://github.com/sivel/speedtest-cli) (internet speedtest)
 - [battop](https://github.com/svartalf/rust-battop) (battery top)
-- [tetris](https://github.com/samtay/tetris) 
+- ncdu (stuff)
 
 ## Desktop Enviroments
 - Gnome
@@ -62,6 +62,11 @@
 - VLC
 - OBS
 - ULauncher (application launcher)
+- Kden Live
+- Okular
+- Tor
+- Wine
+- XClicker
 
 ## Other
 - indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg, 2))]`)
