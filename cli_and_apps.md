@@ -38,7 +38,8 @@
 - tty-clock (terminal clock)
 - [speedtest-cli](https://github.com/sivel/speedtest-cli) (internet speedtest)
 - [battop](https://github.com/svartalf/rust-battop) (battery top)
-- ncdu (stuff)
+- ncdu (disk stuff)
+- tmux (terminal multiplexer)
 
 ## Desktop Enviroments
 - Gnome
