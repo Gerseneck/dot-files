@@ -40,6 +40,7 @@
 - [battop](https://github.com/svartalf/rust-battop) (battery top)
 - ncdu (disk stuff)
 - tmux (terminal multiplexer)
+- [flitter](https://github.com/alexozer/flitter) (cli speedrun timer)
 
 ## Desktop Enviroments
 - Gnome
