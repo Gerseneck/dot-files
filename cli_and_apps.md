@@ -53,8 +53,9 @@
 - Chrome
 - Discord Canary
 - Alacritty
-- Sublime Text
-- Intellij
+- Sublime Text (meeh)
+- [Intellij](https://www.jetbrains.com/toolbox-app/)
+- [Pycharm](https://www.jetbrains.com/toolbox-app/)
 - Libre office suite
 - Obsidian.md
 - Virtual Box
