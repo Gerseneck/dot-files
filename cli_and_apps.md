@@ -3,7 +3,7 @@
 
 ## Table of Contents
 - [Command Line Applications](#cli-apps)
-- [Desktop Enviorments](#desktop-enviroments)
+- [Desktop Environments](#desktop-environments)
 - [Package Managers](#package-managers)
 - [Gui Applications](#gui-apps)
 - [Other](#other)
@@ -42,7 +42,7 @@
 - tmux (terminal multiplexer)
 - [flitter](https://github.com/alexozer/flitter) (cli speedrun timer)
 
-## Desktop Enviroments
+## Desktop Environments
 - Gnome
 - KDE
 
@@ -58,6 +58,9 @@
 - [Pycharm](https://www.jetbrains.com/toolbox-app/)
 - Libre office suite
 - Obsidian.md
+	- Themes
+		- [Discordian](https://github.com/radekkozak/discordian)
+		- [Dark Moss](https://github.com/sergey900553/obsidian_githublike_theme)
 - Virtual Box
 - Minecraft, Lunar Client, Multimc
 - GIMP
@@ -70,13 +73,13 @@
 - Tor
 - Wine
 - XClicker
-
-## Python
-- [nuitka](https://github.com/Nuitka/Nuitka)
+- Gnome-Plots
+- Collision
+- Pulseadio
 
 ## Other
 - indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg, 2))]`)
 - alacritty (GPU based terminal emulator)
 - synth-shell (terminal beautification)
 - [starship](https://starship.rs/) (bash)
-- powerline10k (zsh)
+- ibus (input method)
