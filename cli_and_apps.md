@@ -41,6 +41,8 @@
 - ncdu (disk stuff)
 - tmux (terminal multiplexer)
 - [flitter](https://github.com/alexozer/flitter) (cli speedrun timer)
+- [trash-cli](https://github.com/andreafrancia/trash-cli)
+	- [rmtrash](https://github.com/PhrozenByte/rmtrash)
 
 ## Desktop Environments
 - Gnome
