@@ -44,6 +44,7 @@
 - [trash-cli](https://github.com/andreafrancia/trash-cli) (cli to acess trash bin)
 	- [rmtrash](https://github.com/PhrozenByte/rmtrash) (rm like frontend for trash-cli)
 - [glow](https://github.com/charmbracelet/glow) (markdown viewer cli)
+- [jump](https://github.com/gsamokovarov/jump) (jump around dir)
 
 ## Desktop Environments
 - Gnome
