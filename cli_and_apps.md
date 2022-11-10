@@ -87,3 +87,5 @@
 - synth-shell (terminal beautification)
 - [starship](https://starship.rs/) (bash)
 - ibus (input method)
+	- `sudo apt-get install ibus-pinyin`
+- `python3 -m json.tool <file>`
