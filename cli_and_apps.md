@@ -89,3 +89,4 @@
 - ibus (input method)
 	- `sudo apt-get install ibus-pinyin`
 - `python3 -m json.tool <file>`
+- [CookieClicker](https://github.com/Sushi8756/Cookie-Clicker-2.048/tree/main)
