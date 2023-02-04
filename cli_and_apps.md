@@ -63,12 +63,13 @@
 - Libre office suite
 - Obsidian.md
 	- Themes
-		- [Discordian](https://github.com/radekkozak/discordian)
 		- [Dark Moss](https://github.com/sergey900553/obsidian_githublike_theme)
-- Virtual Box
+- QEMU/KVM + virt manager
 - Minecraft, Lunar Client, Multimc
+- SuperTuxKart
 - GIMP
 - LazPaint
+- Krita
 - VLC
 - OBS
 - ULauncher (application launcher)
@@ -77,10 +78,12 @@
 - Tor
 - Wine
 - XClicker
-- Gnome-Plots
 - Collision
 - Pulseadio
 - [Fluent Reader](https://github.com/yang991178/fluent-reader)
+- XSnow
+- Celestia
+- [Veloren](https://veloren.net/)
 
 ## Other
 - indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg, 2))]`)
