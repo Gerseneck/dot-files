@@ -45,6 +45,7 @@
 	- [rmtrash](https://github.com/PhrozenByte/rmtrash) (rm like frontend for trash-cli)
 - [glow](https://github.com/charmbracelet/glow) (markdown viewer cli)
 - [jump](https://github.com/gsamokovarov/jump) (jump around dir)
+- [please-cli](https://github.com/NayamAmarshe/please)
 
 ## Desktop Environments
 - Gnome
