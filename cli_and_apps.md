@@ -85,6 +85,7 @@
 - XSnow
 - Celestia
 - [Veloren](https://veloren.net/)
+- [Qalculate](https://qalculate.github.io/index.html)
 
 ## Other
 - indicator-multiload (`[CPU $(decimals(cpu.inuse*load.cpus*100, 0))% $(frequency(cpufreq.cur))] [Mem $(decimals(mem.user/1073741824, 1)) GiB + $(decimals(swap.used/1048576, 0)) MiB] [Load $(decimals(load.avg, 2))]`)
