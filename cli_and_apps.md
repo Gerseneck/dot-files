@@ -26,6 +26,7 @@
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (better yt-dl)
 - gpg (signing commits)
 - git (push / pull from github)
+	- [git credentials helper](https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git)
 - ffmpeg (useful stuff) (ffmpeg -i)
 - moc (mocp) (music-player)
 	- moc-ffmpeg-plugin (mp4 support)
