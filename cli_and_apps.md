@@ -66,6 +66,7 @@
 - Obsidian.md
 	- Themes
 		- [Dark Moss](https://github.com/sergey900553/obsidian_githublike_theme)
+- [Kile](https://apps.kde.org/kile/) (kde latex)
 - QEMU/KVM + virt manager
 - Minecraft, Lunar Client, Multimc
 - SuperTuxKart
@@ -96,4 +97,8 @@
 - ibus (input method)
 	- `sudo apt-get install ibus-pinyin`
 - `python3 -m json.tool <file>`
-- [CookieClicker](https://github.com/Sushi8756/Cookie-Clicker-2.048/tree/main)
+- latex
+	- `preview-latex-style/jammy,jammy,jammy,jammy,now 12.2-1ubuntu1 all [installed,automatic]`
+	- `texlive-latex-base/jammy,jammy,jammy,jammy,now 2021.20220204-1 all [installed,automatic]`
+	- `texlive-latex-extra/jammy,jammy,jammy,jammy,now 2021.20220204-1 all [installed]`
+	- `texlive-latex-recommended/jammy,jammy,jammy,jammy,now 2021.20220204-1 all [installed,automatic]`
