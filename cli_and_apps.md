@@ -11,6 +11,7 @@
 ## Cli Apps
 - nano (GNU nano - text editor of choice)
 - vim, nvim
+	- [vim-plug](https://github.com/junegunn/vim-plug)
 - [btop](https://github.com/aristocratos/btop) (better top)
 - ranger (cli file manager)
 - htop (another top)
