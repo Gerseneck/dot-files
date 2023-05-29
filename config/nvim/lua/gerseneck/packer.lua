@@ -5,11 +5,13 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use {'ms-jpq/chadtree', tag = 'chad', run = 'python3 -m chadtree deps'}
 	use 'lifepillar/pgsql.vim'
+	use 'nvim-tree/nvim-web-devicons'
 	use 'tamton-aquib/staline.nvim'
 	use 'ap/vim-css-color'
 	use 'ryanoasis/vim-devicons'
 	use 'preservim/tagbar'
 	use 'terryma/vim-multiple-cursors'
+	use 'prichrd/netrw.nvim'
 
 	use {
 		'nanotech/jellybeans.vim',
