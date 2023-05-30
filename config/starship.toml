@@ -12,27 +12,27 @@ add_newline = true
 
 [username]
 show_always = true
-style_user = 'bg:#005f00 fg:#eaeaea'
-style_root = 'bg:#005f00 fg:#eaeaea'
+style_user = 'bg:#005f00 fg:#ffffff'
+style_root = 'bg:#005f00 fg:#ffffff'
 format = '[ $user ]($style)'
 
 [hostname]
 ssh_only = false
-style = 'bg:#008700 fg:#eaeaea'
+style = 'bg:#008700 fg:#ffffff'
 format = '[ $hostname ]($style)'
 
 [directory]
-style = 'bg:#eaeaea fg:#686868'
+style = 'bg:#eaeaea fg:#000000'
 format = '[ $path ]($style)'
 truncation_length = 3
-truncation_symbol = "…/"
+truncation_symbol = "../"
 
 [git_branch]
-style = 'bg:#686868 fg:#eaeaea'
+style = 'bg:#686868 fg:#ffffff'
 format = '[](bg:#686868 fg:#eaeaea)[ $branch]($style)'
 
 [git_status]
-style = 'bg:#686868 fg:#eaeaea'
+style = 'bg:#686868 fg:#ffffff'
 ahead = '△'
 behind = '▽'
 diverged = '○'
