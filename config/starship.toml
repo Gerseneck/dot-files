@@ -1,0 +1,48 @@
+format = """
+$username\
+[](bg:#008700 fg:#005f00)\
+$hostname\
+[](bg:#eaeaea fg:#008700)\
+$directory\
+$git_branch\
+$git_status\
+[](fg:#eaeaea) """
+
+add_newline = true
+
+[username]
+show_always = true
+style_user = 'bg:#005f00 fg:#eaeaea'
+style_root = 'bg:#005f00 fg:#eaeaea'
+format = '[ $user ]($style)'
+
+[hostname]
+ssh_only = false
+style = 'bg:#008700 fg:#eaeaea'
+format = '[ $hostname ]($style)'
+
+[directory]
+style = 'bg:#eaeaea fg:#686868'
+format = '[ $path ]($style)'
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+style = 'bg:#686868 fg:#eaeaea'
+format = '[](bg:#686868 fg:#eaeaea)[ $branch]($style)'
+
+[git_status]
+style = 'bg:#686868 fg:#eaeaea'
+ahead = '△'
+behind = '▽'
+diverged = '○'
+modified = '◔'
+stashed = ''
+format = '[ $all_status$ahead_behind ]($style)[](bg:#eaeaea fg:#686868)'
+
+[line_break]
+disabled = true
+
+[package]
+disabled = true
+
