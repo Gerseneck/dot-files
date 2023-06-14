@@ -32,7 +32,6 @@
 - moc (mocp) (music-player)
 	- moc-ffmpeg-plugin (mp4 support)
 - fasttyper (pip install fasttyper)
-- lsd (lsdeleux - better ls command)
 - [ASCIIquarium](https://github.com/cmatsuoka/asciiquarium) (fun stuff)
 - crontab (crontab -e)
 - [pastel](https://github.com/sharkdp/pastel) (color management)
