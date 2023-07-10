@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
 	use 'preservim/tagbar'
 	use 'terryma/vim-multiple-cursors'
 	use 'prichrd/netrw.nvim'
+	use 'vimlab/split-term.vim'
 
 	use {
 		'nanotech/jellybeans.vim',
