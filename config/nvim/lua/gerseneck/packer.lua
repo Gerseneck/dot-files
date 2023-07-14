@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
 	use 'terryma/vim-multiple-cursors'
 	use 'prichrd/netrw.nvim'
 	use 'vimlab/split-term.vim'
+	use 'lewis6991/gitsigns.nvim'
 
 	use {
 		'nanotech/jellybeans.vim',
