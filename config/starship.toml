@@ -25,7 +25,7 @@ format = '[ $hostname ]($style)'
 style = 'bg:#eaeaea fg:#000000'
 format = '[ $path ]($style)'
 truncation_length = 3
-truncation_symbol = "../"
+truncation_symbol = "…/"
 
 [git_branch]
 style = 'bg:#686868 fg:#ffffff'
