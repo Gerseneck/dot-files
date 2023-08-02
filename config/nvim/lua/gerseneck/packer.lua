@@ -11,9 +11,13 @@ return require('packer').startup(function(use)
 	use 'ryanoasis/vim-devicons'
 	use 'preservim/tagbar'
 	use 'terryma/vim-multiple-cursors'
-	use 'prichrd/netrw.nvim'
 	use 'vimlab/split-term.vim'
 	use 'lewis6991/gitsigns.nvim'
+
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.2',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 
 	use {
 		'nanotech/jellybeans.vim',
