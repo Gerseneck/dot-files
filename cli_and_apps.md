@@ -17,6 +17,7 @@
 - htop (another top)
 - neofetch (fetches system info)
 - cpufetch (fetches cpu)
+- [onefetch](https://github.com/o2sh/onefetch) (fetch git status)
 - earlyoom (early ooms)
 - auto-cpufreq (better cpu usage and battery)
 - termdown (cli timer)
@@ -84,8 +85,6 @@
 - Collision
 - Pulseadio
 - [Fluent Reader](https://github.com/yang991178/fluent-reader)
-- XSnow
-- Celestia
 - [Veloren](https://veloren.net/)
 - [Qalculate](https://qalculate.github.io/index.html)
 
