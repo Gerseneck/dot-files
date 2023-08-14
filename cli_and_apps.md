@@ -17,7 +17,7 @@
 - htop (another top)
 - neofetch (fetches system info)
 - cpufetch (fetches cpu)
-- [onefetch](https://github.com/o2sh/onefetch) (fetch git status)
+- [onefetch](https://github.com/o2sh/onefetch) (fetch git stats)
 - earlyoom (early ooms)
 - auto-cpufreq (better cpu usage and battery)
 - termdown (cli timer)
@@ -42,12 +42,11 @@
 - [battop](https://github.com/svartalf/rust-battop) (battery top)
 - ncdu (disk stuff)
 - tmux (terminal multiplexer)
-- [flitter](https://github.com/alexozer/flitter) (cli speedrun timer)
 - [trash-cli](https://github.com/andreafrancia/trash-cli) (cli to acess trash bin)
 	- [rmtrash](https://github.com/PhrozenByte/rmtrash) (rm like frontend for trash-cli)
 - [glow](https://github.com/charmbracelet/glow) (markdown viewer cli)
 - [jump](https://github.com/gsamokovarov/jump) (jump around dir)
-- [please-cli](https://github.com/NayamAmarshe/please)
+- [fzf](https://github.com/junegunn/fzf) (fuzzy finder)
 
 ## Desktop Environments
 - Gnome
@@ -60,7 +59,6 @@
 - Chrome
 - Discord Canary
 - Alacritty
-- Sublime Text (meeh)
 - [Intellij](https://www.jetbrains.com/toolbox-app/)
 - [Pycharm](https://www.jetbrains.com/toolbox-app/)
 - Libre office suite
@@ -69,7 +67,7 @@
 		- [Dark Moss](https://github.com/sergey900553/obsidian_githublike_theme)
 - [Kile](https://apps.kde.org/kile/) (kde latex)
 - QEMU/KVM + virt manager
-- Minecraft, Lunar Client, Multimc
+- Minecraft, Lunar Client, Prism Launcher
 - SuperTuxKart
 - GIMP
 - LazPaint
@@ -79,7 +77,6 @@
 - ULauncher (application launcher)
 - Kden Live
 - Okular
-- Tor
 - Wine
 - XClicker
 - Collision
