@@ -6,6 +6,8 @@ lsp.ensure_installed({
 	'ruby_ls',
 	'clangd',
 	'tsserver',
+	'emmet-ls',
+	'html-lsp'
 })
 
 lsp.setup_nvim_cmp({
