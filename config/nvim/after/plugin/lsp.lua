@@ -6,7 +6,7 @@ lsp.ensure_installed({
 	'ruby_ls',
 	'clangd',
 	'tsserver',
-	'emmet-ls',
+	'emmet_ls',
 	'html',
 })
 
