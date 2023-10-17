@@ -7,7 +7,7 @@ lsp.ensure_installed({
 	'clangd',
 	'tsserver',
 	'emmet-ls',
-	'html-lsp'
+	'html',
 })
 
 lsp.setup_nvim_cmp({
