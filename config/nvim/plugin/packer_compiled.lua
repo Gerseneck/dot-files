@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/geeson/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   jellybeans = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme jellybeans\bcmd\bvim\0" },
     loaded = true,
@@ -145,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/geeson/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/geeson/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -155,15 +165,30 @@ _G.packer_plugins = {
     path = "/home/geeson/.local/share/nvim/site/pack/packer/start/pgsql.vim",
     url = "https://github.com/lifepillar/pgsql.vim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["split-term.vim"] = {
+    loaded = true,
+    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/split-term.vim",
+    url = "https://github.com/vimlab/split-term.vim"
+  },
+  ["staline.nvim"] = {
+    loaded = true,
+    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/staline.nvim",
+    url = "https://github.com/tamton-aquib/staline.nvim"
+  },
   tagbar = {
     loaded = true,
     path = "/home/geeson/.local/share/nvim/site/pack/packer/start/tagbar",
     url = "https://github.com/preservim/tagbar"
   },
-  ["vim-airline"] = {
+  ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
+    path = "/home/geeson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-css-color"] = {
     loaded = true,

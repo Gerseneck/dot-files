@@ -17,5 +17,7 @@ vim.opt.whichwrap:append {
 
 vim.opt.encoding = 'UTF-8'
 
-vim.opt.laststatus=2
+vim.opt.laststatus = 2
 vim.opt.termguicolors = true
+
+vim.cmd('autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab')
