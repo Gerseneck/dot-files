@@ -3,7 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 
 	use 'wbthomason/packer.nvim'
-	use {'ms-jpq/chadtree', tag = 'chad', run = 'python3 -m chadtree deps'}
+	use 'nvim-tree/nvim-tree.lua' 
 	use 'lifepillar/pgsql.vim'
 	use 'nvim-tree/nvim-web-devicons'
 	use 'tamton-aquib/staline.nvim'
