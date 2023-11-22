@@ -1,11 +1,11 @@
 require('staline').setup({
-	mode_icons = {
+    mode_icons = {
         n = ' ',
         i = ' ',
         c = ' ',
         v = ' ',
     },
-	mode_colors = {
+    mode_colors = {
         n = '#2bbb4f',
         i = '#986fec',
         c = '#e27d60',

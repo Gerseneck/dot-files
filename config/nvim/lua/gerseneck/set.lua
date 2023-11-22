@@ -10,10 +10,10 @@ vim.opt.expandtab = true
 
 vim.opt.mouse = 'a'
 vim.opt.whichwrap:append {
-  ['<'] = true,
-  ['>'] = true,
-  ['['] = true,
-  [']'] = true,
+    ['<'] = true,
+    ['>'] = true,
+    ['['] = true,
+    [']'] = true,
 }
 
 vim.opt.encoding = 'UTF-8'
