@@ -8,6 +8,7 @@ lsp.ensure_installed({
     'tsserver',
     'emmet_ls',
     'html',
+    'texlab',
 })
 
 lsp.setup_nvim_cmp({
