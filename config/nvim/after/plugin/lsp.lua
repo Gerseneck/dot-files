@@ -19,6 +19,13 @@ lsp.setup_nvim_cmp({
     },
 })
 
+lsp.on_attach(function(buffer)
+    local opts = { buffer = buffer, remap = false }
+
+    vim.keymap.set('n', '<leader>gd', function() vim.lsp.buf.definition() end, opts)
+    vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
+end)
+
 lsp.setup()
 
 vim.diagnostic.config({
