@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     use 'vimlab/split-term.vim'
     use 'lewis6991/gitsigns.nvim'
     use 'windwp/nvim-autopairs'
+    use 'lervag/vimtex'
     use { 'kylechui/nvim-surround', tag = '*' }
 
     use {
