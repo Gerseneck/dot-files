@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'preservim/tagbar'
     use 'terryma/vim-multiple-cursors'
-    use 'vimlab/split-term.vim'
+    use 'nvim-treesitter/nvim-treesitter'
     use 'lewis6991/gitsigns.nvim'
     use 'windwp/nvim-autopairs'
     use 'lervag/vimtex'
