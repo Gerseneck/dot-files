@@ -1,1 +1,2 @@
-require('gerseneck')
+require("gerseneck.core")
+require("gerseneck.lazy")

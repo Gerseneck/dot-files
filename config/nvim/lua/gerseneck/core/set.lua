@@ -8,15 +8,20 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.expandtab = true
 
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 vim.opt.whichwrap:append {
-    ['<'] = true,
-    ['>'] = true,
-    ['['] = true,
-    [']'] = true,
+  ["<"] = true,
+  [">"] = true,
+  ["["] = true,
+  ["]"] = true,
 }
 
-vim.opt.encoding = 'UTF-8'
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+vim.opt.scrolloff = 8
+
+vim.opt.encoding = "UTF-8"
 
 vim.opt.laststatus = 2
 vim.opt.termguicolors = true
@@ -24,4 +29,4 @@ vim.opt.termguicolors = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.cmd('autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab')
+vim.cmd("autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab")
