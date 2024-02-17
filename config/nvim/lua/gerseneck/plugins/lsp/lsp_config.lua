@@ -20,6 +20,9 @@ return {
         "emmet_ls",
         "html",
         "texlab"
+      },
+      handlers = {
+        lsp_zero.default_setup
       }
     })
 
@@ -32,14 +35,7 @@ return {
 
     vim.diagnostic.config({
       virtual_text = true,
-      severity_sort = true,
-      float = {
-        style = "minimal",
-        border = "rounded",
-        source = "always",
-        header = "",
-        prefix = "",
-      }
+      severity_sort = true
     })
 
     lsp_zero.on_attach(function(client, buffer)
