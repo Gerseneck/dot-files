@@ -38,6 +38,8 @@ return {
       severity_sort = true
     })
 
+    vim.opt.signcolumn = "auto"
+
     lsp_zero.on_attach(function(client, buffer)
       local opts = { buffer = buffer, remap = false }
 
