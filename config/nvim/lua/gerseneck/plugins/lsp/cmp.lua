@@ -28,6 +28,13 @@ return {
       preselect = "none",
       completion = {
         completeopt = "menu, menuone, noinsert, noselect"
+      },
+      sources = {
+        { name = "path" },
+        { name = "nvim_lsp" },
+        { name = "nvim_lua" },
+        { name = "buffer" },
+        { name = "lua_snip" }
       }
     })
 
