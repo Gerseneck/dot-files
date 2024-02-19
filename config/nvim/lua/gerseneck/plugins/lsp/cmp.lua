@@ -19,10 +19,10 @@ return {
 
     cmp.setup({
       mapping = cmp.mapping.preset.insert({
-        ['<CR>'] = cmp.mapping.confirm({ select = false }),
-        ['<C-e>'] = cmp_action.toggle_completion(),
-        ['<Tab>'] = cmp_action.tab_complete(),
-        ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<C-e>"] = cmp_action.toggle_completion(),
+        ["<Tab>"] = cmp_action.tab_complete(),
+        ["<S-Tab>"] = cmp.mapping.select_prev_item(),
       }),
       select_behavior = "insert",
       preselect = "none",
