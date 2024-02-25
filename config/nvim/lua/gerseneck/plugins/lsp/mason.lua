@@ -6,8 +6,7 @@ return {
 
     require("mason-nvim-lint").setup({
       ensure_installed = {
-        "pylint",
-        "eslint_d"
+        "pylint"
       }
     })
   end
