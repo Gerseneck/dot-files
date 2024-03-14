@@ -11,7 +11,8 @@ return {
     lsp_zero.extend_lspconfig()
 
     require("mason-lspconfig").setup({
-      ensured_installed = {
+      ensure_installed = {
+        "lua_ls",
         "pyright",
         "jdtls",
         "ruby_ls",
