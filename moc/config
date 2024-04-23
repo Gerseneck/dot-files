@@ -13,3 +13,4 @@
 Theme = mocp_gerseneck_theme
 AutoNext = yes
 PlaylistNumbering = yes
+ShowTime = yes

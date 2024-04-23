@@ -1,0 +1,8 @@
+# ignores everything (pid file, socket and state files)
+*
+
+# keep config and theme files
+!.gitignore
+!config
+!themes/
+!themes/*
