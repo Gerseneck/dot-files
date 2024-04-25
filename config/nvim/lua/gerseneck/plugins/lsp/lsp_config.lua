@@ -44,6 +44,8 @@ return {
     lsp_zero.on_attach(function(client, buffer)
       local opts = { buffer = buffer, remap = false }
 
+      vim.keymap.set("n", "[d", function() vim.diagnostic.goto_prev() end)
+      vim.keymap.set("n", "]d", function() vim.diagnostic.goto_next() end)
       vim.keymap.set("n", "<leader>gd", function() vim.lsp.buf.definition() end, opts)
       vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     end)
