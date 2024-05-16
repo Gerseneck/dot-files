@@ -15,7 +15,7 @@ return {
         "lua_ls",
         "pyright",
         "jdtls",
-        "ruby_ls",
+        "ruby_lsp",
         "clangd",
         "tsserver",
         "emmet_ls",
