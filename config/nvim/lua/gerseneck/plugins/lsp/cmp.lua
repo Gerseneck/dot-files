@@ -11,17 +11,25 @@ return {
     { "rafamadriz/friendly-snippets" }
   },
   config = function()
-    local lsp_zero = require("lsp-zero")
-    lsp_zero.extend_cmp()
-
     local cmp = require("cmp")
-    local cmp_action = lsp_zero.cmp_action()
+    local luasnip = require("luasnip")
 
     cmp.setup({
       mapping = cmp.mapping.preset.insert({
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
-        ["<C-e>"] = cmp_action.toggle_completion(),
-        ["<Tab>"] = cmp_action.tab_complete(),
+        ["<Tab>"] = cmp.mapping(function(fallback)
+          local col = vim.fn.col('.') - 1
+
+          if cmp.visible() then
+            cmp.select_next_item()
+          elseif luasnip.locally_jumpable(1) then
+            luasnip.jump(1)
+          elseif col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
+            fallback()
+          else
+            cmp.complete()
+          end
+        end, { "i", "s" }),
         ["<S-Tab>"] = cmp.mapping.select_prev_item(),
       }),
       select_behavior = "insert",
@@ -37,8 +45,5 @@ return {
         { name = "lua_snip" }
       }
     })
-
-    local lua_opts = lsp_zero.nvim_lua_ls()
-    require("lspconfig").lua_ls.setup(lua_opts)
   end
 }

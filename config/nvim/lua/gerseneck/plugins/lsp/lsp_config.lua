@@ -4,12 +4,15 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     { "hrsh7th/cmp-nvim-lsp" },
+    { "williamboman/mason.nvim" },
+    { "rshkarin/mason-nvim-lint" },
     { "williamboman/mason-lspconfig.nvim" }
   },
   config = function()
-    local lsp_zero = require("lsp-zero")
-    lsp_zero.extend_lspconfig()
+    local lsp_config = require("lspconfig")
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+    require("mason").setup({})
     require("mason-lspconfig").setup({
       ensure_installed = {
         "lua_ls",
@@ -23,15 +26,31 @@ return {
         "texlab"
       },
       handlers = {
-        lsp_zero.default_setup
+        function(server_name)
+          lsp_config[server_name].setup({
+            capabilities = capabilities
+          })
+        end,
+
+        ["lua_ls"] = function()
+          lsp_config.lua_ls.setup({
+            capabilities = capabilities,
+            settings = {
+              Lua = {
+                diagnostics = {
+                  globals = { "vim" }
+                }
+              }
+            }
+          })
+        end
       }
     })
 
-    lsp_zero.set_sign_icons({
-      error = "✘",
-      warn = "▲",
-      hint = "⚑",
-      info = ""
+    require("mason-nvim-lint").setup({
+      ensure_installed = {
+        "pylint"
+      }
     })
 
     vim.diagnostic.config({
@@ -39,15 +58,11 @@ return {
       severity_sort = true
     })
 
+    vim.fn.sign_define("DiagnosticSignError", { text = "✘" })
+    vim.fn.sign_define("DiagnosticSignWarn", { text = "▲" })
+    vim.fn.sign_define("DiagnosticSignInfo", { text = "⚑" })
+    vim.fn.sign_define("DiagnosticSignHint", { text = "" })
+
     vim.opt.signcolumn = "auto"
-
-    lsp_zero.on_attach(function(client, buffer)
-      local opts = { buffer = buffer, remap = false }
-
-      vim.keymap.set("n", "[d", function() vim.diagnostic.goto_prev() end, opts)
-      vim.keymap.set("n", "]d", function() vim.diagnostic.goto_next() end, opts)
-      vim.keymap.set("n", "<leader>gd", function() vim.lsp.buf.definition() end, opts)
-      vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-    end)
   end
 }
