@@ -34,7 +34,7 @@ return {
           end
 
           vim.fn.setqflist(qf_list)
-          vim.cmd('copen')
+          vim.cmd("copen")
         end, bufnr)
       end,
       {nargs = "?", complete = function() return {"all"} end})
