@@ -37,7 +37,7 @@ return {
           vim.cmd("copen")
         end, bufnr)
       end,
-      {nargs = "?", complete = function() return {"all"} end})
+      { nargs = "?", complete = function() return {"all"} end })
     end
 
     require("mason").setup({})
