@@ -78,6 +78,12 @@ return {
               add_ruby_deps_command(client, buffer)
             end
           })
+        end,
+        ["html"] = function()
+          capabilities.textDocument.completion.completionItem.snippetSupport = true
+          lsp_config.html.setup({
+            capabilities = capabilities
+          })
         end
       }
     })
