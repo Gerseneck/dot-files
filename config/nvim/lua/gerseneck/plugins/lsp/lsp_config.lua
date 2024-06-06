@@ -11,6 +11,7 @@ return {
   config = function()
     local lsp_config = require("lspconfig")
     local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
 
     local function add_ruby_deps_command(client, bufnr)
       vim.api.nvim_buf_create_user_command(bufnr, "ShowRubyDeps", function(opts)
@@ -77,12 +78,6 @@ return {
             on_attach = function(client, buffer)
               add_ruby_deps_command(client, buffer)
             end
-          })
-        end,
-        ["html"] = function()
-          capabilities.textDocument.completion.completionItem.snippetSupport = true
-          lsp_config.html.setup({
-            capabilities = capabilities
           })
         end
       }
