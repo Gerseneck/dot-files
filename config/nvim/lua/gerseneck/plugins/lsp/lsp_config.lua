@@ -72,6 +72,15 @@ return {
             }
           })
         end,
+        ["pyright"] = function()
+          lsp_config.pyright.setup({
+            settings = {
+              python = {
+                pythonPath = vim.fn.exepath("python3")
+              }
+            }
+          })
+        end,
         ["ruby_lsp"] = function()
           lsp_config.ruby_lsp.setup({
             capabilities = capabilities,
