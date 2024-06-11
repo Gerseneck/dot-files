@@ -50,7 +50,7 @@ return {
         "ruby_lsp",
         "clangd",
         "tsserver",
-        "emmet_ls",
+        "emmet_language_server",
         "html",
         "texlab"
       },
