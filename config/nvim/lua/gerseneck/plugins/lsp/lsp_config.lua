@@ -74,6 +74,7 @@ return {
         end,
         ["pyright"] = function()
           lsp_config.pyright.setup({
+            capabilities = capabilities,
             settings = {
               python = {
                 pythonPath = vim.fn.exepath("python3")
@@ -87,6 +88,12 @@ return {
             on_attach = function(client, buffer)
               add_ruby_deps_command(client, buffer)
             end
+          })
+        end,
+        ["html"] = function()
+          lsp_config.html.setup({
+            capabilities = capabilities,
+            filetypes = { "html", "templ", "eruby" }
           })
         end
       }
