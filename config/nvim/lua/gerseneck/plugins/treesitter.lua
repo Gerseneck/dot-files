@@ -13,7 +13,7 @@ return {
         "javascript",
       },
       indent = {
-        enable = true
+        enable = false
       },
       highlight = {
         enable = false,
