@@ -5,7 +5,7 @@ show_symlink = true
 
 [opener]
 play = [
-	{ run = 'vlc "$@"', orphan = true },
+    { run = 'vlc "$@"', orphan = true },
 ]
 ebook = [
     { run = 'ebook-viewer "$@"', orphan = true }
