@@ -16,7 +16,7 @@ return {
         enable = false
       },
       highlight = {
-        enable = false,
+        enable = true,
         additional_vim_regex_highlighting = { "markdown" },
       },
     })
