@@ -3,6 +3,10 @@ path = "~/Java"
 depth = 1
 
 [[search_dirs]]
+path = "~/Notes"
+depth = 1
+
+[[search_dirs]]
 path = "~/Python"
 depth = 1
 
