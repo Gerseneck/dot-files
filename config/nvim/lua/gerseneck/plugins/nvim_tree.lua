@@ -8,7 +8,7 @@ return {
       renderer = {
         icons = {
           show = {
-            folder_arrow = false;
+            folder_arrow = false
           },
           glyphs = {
             git = {
