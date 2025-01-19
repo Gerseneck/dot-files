@@ -17,3 +17,25 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
   end
 })
+
+vim.api.nvim_create_autocmd("ExitPre", {
+  callback = function()
+    local project_dir = vim.fs.dirname(vim.fs.find({ "gradlew", "mvnw", "pom.xml" }, { upward = true })[1])
+    local files = { ".project", ".classpath", ".factorypath" }
+
+    if not project_dir then
+      return
+    end
+
+    for _, filename in pairs(files) do
+      local path = vim.fs.joinpath(project_dir, filename)
+
+      if vim.fn.filereadable(path) == 0 then
+        goto continue
+      end
+
+      os.remove(path)
+      ::continue::
+    end
+  end
+})
