@@ -14,11 +14,11 @@ return {
             git = {
               unstaged = "[M]",
               staged = "[+]",
-              unmerged = "",
+              unmerged = nil,
               renamed = "[R]",
-              deleted = "[✘]",
               untracked = "[?]",
-              ignored = ""
+              deleted = "[✘]",
+              ignored = nil
             }
           }
         }

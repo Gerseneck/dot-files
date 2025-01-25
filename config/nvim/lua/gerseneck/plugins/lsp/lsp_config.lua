@@ -49,7 +49,7 @@ return {
         "jdtls",
         "ruby_lsp",
         "clangd",
-        "tsserver",
+        "ts_ls",
         "emmet_language_server",
         "html",
         "texlab"
