@@ -131,8 +131,8 @@ return {
 
     vim.fn.sign_define("DiagnosticSignError", { text = "✘" })
     vim.fn.sign_define("DiagnosticSignWarn", { text = "▲" })
-    vim.fn.sign_define("DiagnosticSignInfo", { text = "⚑" })
-    vim.fn.sign_define("DiagnosticSignHint", { text = "" })
+    vim.fn.sign_define("DiagnosticSignInfo", { text = "" })
+    vim.fn.sign_define("DiagnosticSignHint", { text = "⚑" })
 
     vim.opt.signcolumn = "auto"
   end
