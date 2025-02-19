@@ -4,15 +4,11 @@ return {
   dependencies = {
     { "hrsh7th/cmp-buffer" },
     { "hrsh7th/cmp-path" },
-    { "saadparwaiz1/cmp_luasnip" },
     { "hrsh7th/cmp-nvim-lsp" },
     { "hrsh7th/cmp-nvim-lua" },
-    { "L3MON4D3/LuaSnip" },
-    { "rafamadriz/friendly-snippets" }
   },
   config = function()
     local cmp = require("cmp")
-    local luasnip = require("luasnip")
 
     cmp.setup({
       mapping = cmp.mapping.preset.insert({
@@ -22,8 +18,6 @@ return {
 
           if cmp.visible() then
             cmp.select_next_item()
-          elseif luasnip.locally_jumpable(1) then
-            luasnip.jump(1)
           elseif col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
             fallback()
           else
@@ -41,8 +35,7 @@ return {
         { name = "path" },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
-        { name = "buffer" },
-        { name = "lua_snip" }
+        { name = "buffer" }
       }
     })
   end
