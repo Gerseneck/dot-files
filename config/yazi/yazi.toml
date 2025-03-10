@@ -2,9 +2,10 @@
 sort_by = "natural"
 sort_dir_first = true
 show_symlink = true
-prepend_keymap = [
-    { on  = "y", run = [ 'shell -- echo "$@" | xclip -i -selection clipboard -t text/uri-list', "yank" ] },
-    { on  = "y", run = [ 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] }
+scrolloff = 8
+keymap = [
+    { on = "y", run = [ 'for path in "$@"; do echo "file://$path"; done | xclip -i -selection clipboard -t text/uri-list', "yank" ] },
+    { on = "y", run = [ 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] }
 ]
 
 [open]
