@@ -12,23 +12,23 @@ return {
     local gerseneck_theme = {
       normal = {
         a = { fg = colors.bg, bg = colors.normal_green, gui = "bold" },
-        b = { fg = colors.normal_green },
-        c = { fg = colors.normal_green },
+        b = { fg = colors.normal_green, bg = colors.bg },
+        c = { fg = colors.normal_green, bg = colors.bg },
       },
       insert = {
         a = { fg = colors.bg, bg = colors.insert_purple, gui = "bold" },
-        b = { fg = colors.insert_purple },
-        c = { fg = colors.insert_purple },
+        b = { fg = colors.insert_purple, bg = colors.bg },
+        c = { fg = colors.insert_purple, bg = colors.bg },
       },
       command = {
         a = { fg = colors.bg, bg = colors.command_red, gui = "bold" },
-        b = { fg = colors.command_red },
-        c = { fg = colors.command_red },
+        b = { fg = colors.command_red, bg = colors.bg },
+        c = { fg = colors.command_red, bg = colors.bg },
       },
       visual = {
         a = { fg = colors.bg, bg = colors.visual_blue, gui = "bold" },
-        b = { fg = colors.visual_blue },
-        c = { fg = colors.visual_blue },
+        b = { fg = colors.visual_blue, bg = colors.bg },
+        c = { fg = colors.visual_blue, bg = colors.bg },
       },
     }
 
