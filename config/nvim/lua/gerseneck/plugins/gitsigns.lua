@@ -7,5 +7,7 @@ return {
     vim.keymap.set("n", "<leader>ph", gitsigns.preview_hunk)
     vim.keymap.set("n", "<leader>rh", gitsigns.reset_hunk)
     vim.keymap.set("n", "<leader>gb", gitsigns.blame)
+    vim.keymap.set("n", "[h", gitsigns.prev_hunk)
+    vim.keymap.set("n", "]h", gitsigns.next_hunk)
   end
 }
