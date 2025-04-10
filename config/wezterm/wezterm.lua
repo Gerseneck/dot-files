@@ -1,7 +1,10 @@
 local wezterm = require("wezterm")
 
 return {
-  font = wezterm.font({ family = "JetBrains Mono Nerd Font", weight = "Regular" }),
+  font = wezterm.font_with_fallback({
+    { family = "JetBrains Mono Nerd Font", weight = "Regular" },
+    { family = "Noto Sans CJK SC", weight = "Regular" }
+  }),
   font_size = 11,
   harfbuzz_features = { "calt = 0", "clig = 0", "liga = 0" },
   force_reverse_video_cursor = true,
