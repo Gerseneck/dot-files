@@ -9,6 +9,8 @@ return {
   harfbuzz_features = { "calt = 0", "clig = 0", "liga = 0" },
   force_reverse_video_cursor = true,
   bold_brightens_ansi_colors = false,
+  use_fancy_tab_bar = false,
+  hide_tab_bar_if_only_one_tab = true,
   colors = {
     background = "#1d1f21",
     foreground = "#c5c9c6",
@@ -31,6 +33,9 @@ return {
       "#c28cb8",
       "#93d3c3",
       "#f8f8f8"
+    },
+    tab_bar = {
+      background = "rgba(29, 31, 33, 0.95)"
     }
   },
   window_background_opacity = 0.95,
