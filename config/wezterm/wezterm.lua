@@ -11,6 +11,7 @@ return {
   bold_brightens_ansi_colors = false,
   use_fancy_tab_bar = false,
   hide_tab_bar_if_only_one_tab = true,
+  tab_bar_at_bottom = true,
   colors = {
     background = "#1d1f21",
     foreground = "#c5c9c6",
