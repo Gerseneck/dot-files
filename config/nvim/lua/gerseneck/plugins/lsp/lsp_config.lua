@@ -60,25 +60,6 @@ return {
       },
     }
 
-    lsp_config.dartls.setup {
-      cmd = { "dart", "language-server", "--protocol=lsp" },
-      filetypes = { "dart" },
-      init_options = {
-        closingLabels = true,
-        flutterOutline = true,
-        onlyAnalyzeProjectsWithOpenFiles = true,
-        outline = true,
-        suggestFromUnimportedLibraries = true,
-      },
-      settings = {
-        dart = {
-          completeFunctionCalls = true,
-          showTodos = true,
-        },
-      },
-      capabilities = capabilities,
-    }
-
     require("mason-nvim-lint").setup {
       ensure_installed = {
         "pylint",
@@ -114,6 +95,24 @@ return {
     })
     vim.lsp.config("html", {
       filetypes = { "html", "templ", "eruby" },
+      capabilities = capabilities,
+    })
+    vim.lsp.config("dartls", {
+      cmd = { "dart", "language-server", "--protocol=lsp" },
+      filetypes = { "dart" },
+      init_options = {
+        closingLabels = true,
+        flutterOutline = true,
+        onlyAnalyzeProjectsWithOpenFiles = true,
+        outline = true,
+        suggestFromUnimportedLibraries = true,
+      },
+      settings = {
+        dart = {
+          completeFunctionCalls = true,
+          showTodos = true,
+        },
+      },
       capabilities = capabilities,
     })
 
