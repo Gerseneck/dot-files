@@ -58,49 +58,6 @@ return {
         "html",
         "texlab",
       },
-      handlers = {
-        function(server_name)
-          lsp_config[server_name].setup {
-            capabilities = capabilities,
-          }
-        end,
-        ["lua_ls"] = function()
-          lsp_config.lua_ls.setup {
-            capabilities = capabilities,
-            settings = {
-              Lua = {
-                diagnostics = {
-                  globals = { "vim" },
-                },
-              },
-            },
-          }
-        end,
-        ["pyright"] = function()
-          lsp_config.pyright.setup {
-            capabilities = capabilities,
-            settings = {
-              python = {
-                pythonPath = vim.fn.exepath("python3"),
-              },
-            },
-          }
-        end,
-        ["ruby_lsp"] = function()
-          lsp_config.ruby_lsp.setup {
-            capabilities = capabilities,
-            on_attach = function(client, buffer)
-              add_ruby_deps_command(client, buffer)
-            end,
-          }
-        end,
-        ["html"] = function()
-          lsp_config.html.setup {
-            capabilities = capabilities,
-            filetypes = { "html", "templ", "eruby" },
-          }
-        end,
-      },
     }
 
     lsp_config.dartls.setup {
@@ -127,6 +84,38 @@ return {
         "pylint",
       },
     }
+
+    vim.lsp.config("*", {
+      capabilities = capabilities,
+    })
+    vim.lsp.config("lua_ls", {
+      capabilities = capabilities,
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = { "vim" },
+          },
+        },
+      },
+    })
+    vim.lsp.config("pyright", {
+      capabilities = capabilities,
+      settings = {
+        python = {
+          pythonPath = vim.fn.exepath("python3"),
+        },
+      },
+    })
+    vim.lsp.config("ruby_lsp", {
+      capabilities = capabilities,
+      on_attach = function(client, buffer)
+        add_ruby_deps_command(client, buffer)
+      end,
+    })
+    vim.lsp.config("html", {
+      filetypes = { "html", "templ", "eruby" },
+      capabilities = capabilities,
+    })
 
     vim.diagnostic.config {
       virtual_text = true,
