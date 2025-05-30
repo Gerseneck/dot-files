@@ -15,7 +15,7 @@ return {
       group = lint_augroup,
       callback = function()
         lint.try_lint()
-      end
+      end,
     })
-  end
+  end,
 }

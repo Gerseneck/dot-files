@@ -6,7 +6,7 @@ return {
     { "hrsh7th/cmp-nvim-lsp" },
     { "williamboman/mason.nvim" },
     { "rshkarin/mason-nvim-lint" },
-    { "williamboman/mason-lspconfig.nvim" }
+    { "williamboman/mason-lspconfig.nvim" },
   },
   config = function()
     local lsp_config = require("lspconfig")
@@ -29,7 +29,7 @@ return {
             if showAll or item.dependency then
               table.insert(qf_list, {
                 text = string.format("%s (%s) - %s", item.name, item.version, item.dependency),
-                filename = item.path
+                filename = item.path,
               })
             end
           end
@@ -37,12 +37,16 @@ return {
           vim.fn.setqflist(qf_list)
           vim.cmd("copen")
         end, bufnr)
-      end,
-      { nargs = "?", complete = function() return {"all"} end })
+      end, {
+        nargs = "?",
+        complete = function()
+          return { "all" }
+        end,
+      })
     end
 
-    require("mason").setup({})
-    require("mason-lspconfig").setup({
+    require("mason").setup {}
+    require("mason-lspconfig").setup {
       ensure_installed = {
         "lua_ls",
         "pyright",
@@ -52,54 +56,54 @@ return {
         "ts_ls",
         "emmet_language_server",
         "html",
-        "texlab"
+        "texlab",
       },
       handlers = {
         function(server_name)
-          lsp_config[server_name].setup({
-            capabilities = capabilities
-          })
+          lsp_config[server_name].setup {
+            capabilities = capabilities,
+          }
         end,
         ["lua_ls"] = function()
-          lsp_config.lua_ls.setup({
+          lsp_config.lua_ls.setup {
             capabilities = capabilities,
             settings = {
               Lua = {
                 diagnostics = {
-                  globals = { "vim" }
-                }
-              }
-            }
-          })
+                  globals = { "vim" },
+                },
+              },
+            },
+          }
         end,
         ["pyright"] = function()
-          lsp_config.pyright.setup({
+          lsp_config.pyright.setup {
             capabilities = capabilities,
             settings = {
               python = {
-                pythonPath = vim.fn.exepath("python3")
-              }
-            }
-          })
+                pythonPath = vim.fn.exepath("python3"),
+              },
+            },
+          }
         end,
         ["ruby_lsp"] = function()
-          lsp_config.ruby_lsp.setup({
+          lsp_config.ruby_lsp.setup {
             capabilities = capabilities,
             on_attach = function(client, buffer)
               add_ruby_deps_command(client, buffer)
-            end
-          })
+            end,
+          }
         end,
         ["html"] = function()
-          lsp_config.html.setup({
+          lsp_config.html.setup {
             capabilities = capabilities,
-            filetypes = { "html", "templ", "eruby" }
-          })
-        end
-      }
-    })
+            filetypes = { "html", "templ", "eruby" },
+          }
+        end,
+      },
+    }
 
-    lsp_config.dartls.setup({
+    lsp_config.dartls.setup {
       cmd = { "dart", "language-server", "--protocol=lsp" },
       filetypes = { "dart" },
       init_options = {
@@ -115,28 +119,28 @@ return {
           showTodos = true,
         },
       },
-      capabilities = capabilities
-    })
+      capabilities = capabilities,
+    }
 
-    require("mason-nvim-lint").setup({
+    require("mason-nvim-lint").setup {
       ensure_installed = {
-        "pylint"
-      }
-    })
+        "pylint",
+      },
+    }
 
-    vim.diagnostic.config({
+    vim.diagnostic.config {
       virtual_text = true,
       severity_sort = true,
       signs = {
         text = {
-          [ vim.diagnostic.severity.ERROR ] = "✘",
-          [ vim.diagnostic.severity.WARN ] = "▲",
-          [ vim.diagnostic.severity.INFO ] = "",
-          [ vim.diagnostic.severity.HINT ] = "⚑",
-        }
-      }
-    })
+          [vim.diagnostic.severity.ERROR] = "✘",
+          [vim.diagnostic.severity.WARN] = "▲",
+          [vim.diagnostic.severity.INFO] = "",
+          [vim.diagnostic.severity.HINT] = "⚑",
+        },
+      },
+    }
 
     vim.opt.signcolumn = "auto"
-  end
+  end,
 }

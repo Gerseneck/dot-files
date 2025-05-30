@@ -10,9 +10,9 @@ return {
   config = function()
     local cmp = require("cmp")
 
-    cmp.setup({
-      mapping = cmp.mapping.preset.insert({
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+    cmp.setup {
+      mapping = cmp.mapping.preset.insert {
+        ["<CR>"] = cmp.mapping.confirm { select = false },
         ["<Tab>"] = cmp.mapping(function(fallback)
           local col = vim.fn.col(".") - 1
 
@@ -25,18 +25,18 @@ return {
           end
         end, { "i", "s" }),
         ["<S-Tab>"] = cmp.mapping.select_prev_item(),
-      }),
+      },
       select_behavior = "insert",
       preselect = "none",
       completion = {
-        completeopt = "menu, menuone, noinsert, noselect"
+        completeopt = "menu, menuone, noinsert, noselect",
       },
       sources = {
         { name = "path" },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
-        { name = "buffer" }
-      }
-    })
-  end
+        { name = "buffer" },
+      },
+    }
+  end,
 }

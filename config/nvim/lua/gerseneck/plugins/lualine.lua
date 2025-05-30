@@ -6,7 +6,7 @@ return {
       normal_green = "#2bbb4f",
       insert_purple = "#986fec",
       command_red = "#e27d60",
-      visual_blue = "#4799eb"
+      visual_blue = "#4799eb",
     }
 
     local gerseneck_theme = {
@@ -37,15 +37,19 @@ return {
       lualine_b = { "branch" },
       lualine_c = {
         "%=",
-        { "filetype", icon_only = true, colored = false, padding = { right = 0 }},
-        { "filename", symbols = { modified = "", readonly = "", unnamed = "[No Name]", newfile = "[New]" }, padding = { left = 0 }}
+        { "filetype", icon_only = true, colored = false, padding = { right = 0 } },
+        {
+          "filename",
+          symbols = { modified = "", readonly = "", unnamed = "[No Name]", newfile = "[New]" },
+          padding = { left = 0 },
+        },
       },
       lualine_x = {},
-      lualine_y = {{ "fileformat", padding = { right = 3 }}},
-      lualine_z = { "location", "progress" }
+      lualine_y = { { "fileformat", padding = { right = 3 } } },
+      lualine_z = { "location", "progress" },
     }
 
-    require("lualine").setup({
+    require("lualine").setup {
       options = {
         theme = gerseneck_theme,
         component_separators = "",
@@ -53,7 +57,7 @@ return {
       },
       sections = sections,
       inactive_sections = sections,
-      extensions = { "fugitive", "nvim-tree", "quickfix" }
-    })
-  end
+      extensions = { "fugitive", "nvim-tree", "quickfix" },
+    }
+  end,
 }

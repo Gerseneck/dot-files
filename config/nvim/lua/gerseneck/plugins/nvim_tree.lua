@@ -4,11 +4,11 @@ return {
   lazy = false,
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
-    require("nvim-tree").setup({
+    require("nvim-tree").setup {
       renderer = {
         icons = {
           show = {
-            folder_arrow = false
+            folder_arrow = false,
           },
           glyphs = {
             git = {
@@ -18,13 +18,13 @@ return {
               renamed = "[R]",
               untracked = "[?]",
               deleted = "[✘]",
-              ignored = nil
-            }
-          }
-        }
-      }
-    })
+              ignored = nil,
+            },
+          },
+        },
+      },
+    }
 
     vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeToggle<cr>", { silent = true, noremap = true })
-  end
+  end,
 }
