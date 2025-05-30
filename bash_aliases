@@ -1,3 +1,4 @@
+#!/bin/bash
 alias vi='nvim'
 alias upall='sudo apt update && sudo apt upgrade && flatpak update'
 alias aptrm='sudo apt autoremove'
@@ -16,3 +17,4 @@ alias tre='trash-empty'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias mkdir='mkdir -v'
+alias ln='ln -v'
