@@ -1,3 +1,19 @@
+# Enable / disable tracking reading history with services like `anilist`
+# values: true, false
+# default: true
+track_reading_history = true
+
+# Sets which manga provider will be used when running manga-tui, 
+# you can override it by running manga-tui with the -p flag like this: manga-tui -p weebcentral
+# values: mangadex, weebcentral
+# default: "mangadex"
+default_manga_provider = "mangadex"
+
+# Enable / disable checking for new updates
+# values: true, false
+# default: true
+check_new_updates = true
+
 # The format of the manga downloaded
 # values: cbz, raw, epub, pdf
 # default: cbz
@@ -22,4 +38,18 @@ auto_bookmark = false
 # values: true, false
 # default: false
 track_reading_when_download = false
+
+# Anilist-related config, if you want `manga-tui` to read your anilist credentials from this file then place them here
+[anilist]
+# Your client id from your anilist account
+# leave it as an empty string "" if you don't want to use the config file to read your anilist credentials
+# values: string
+# default: ""
+client_id = ""
+
+# Your acces token from your anilist account
+# leave it as an empty string "" if you don't want to use the config file to read your anilist credentials
+# values: string
+# default: ""
+access_token = ""
 
