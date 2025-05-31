@@ -49,7 +49,7 @@ return {
       lualine_z = { "location", "progress" },
     }
 
-    require("lualine").setup {
+    require("lualine").setup({
       options = {
         theme = gerseneck_theme,
         component_separators = "",
@@ -58,6 +58,6 @@ return {
       sections = sections,
       inactive_sections = sections,
       extensions = { "fugitive", "nvim-tree", "quickfix" },
-    }
+    })
   end,
 }

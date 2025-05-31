@@ -45,8 +45,8 @@ return {
       })
     end
 
-    require("mason").setup {}
-    require("mason-lspconfig").setup {
+    require("mason").setup({})
+    require("mason-lspconfig").setup({
       ensure_installed = {
         "lua_ls",
         "pyright",
@@ -58,13 +58,13 @@ return {
         "html",
         "texlab",
       },
-    }
+    })
 
-    require("mason-nvim-lint").setup {
+    require("mason-nvim-lint").setup({
       ensure_installed = {
         "pylint",
       },
-    }
+    })
 
     vim.lsp.config("*", {
       capabilities = capabilities,
@@ -116,7 +116,7 @@ return {
       capabilities = capabilities,
     })
 
-    vim.diagnostic.config {
+    vim.diagnostic.config({
       virtual_text = true,
       severity_sort = true,
       signs = {
@@ -127,7 +127,7 @@ return {
           [vim.diagnostic.severity.HINT] = "⚑",
         },
       },
-    }
+    })
 
     vim.opt.signcolumn = "auto"
   end,

@@ -4,7 +4,7 @@ return {
   lazy = false,
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
-    require("nvim-tree").setup {
+    require("nvim-tree").setup({
       renderer = {
         icons = {
           show = {
@@ -23,7 +23,7 @@ return {
           },
         },
       },
-    }
+    })
 
     vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeToggle<cr>", { silent = true, noremap = true })
   end,

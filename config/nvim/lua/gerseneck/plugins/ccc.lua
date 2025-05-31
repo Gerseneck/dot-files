@@ -3,7 +3,7 @@ return {
   config = function()
     local ccc = require("ccc")
 
-    ccc.setup {
+    ccc.setup({
       lsp = true,
       highlighter = {
         auto_enable = true,
@@ -14,7 +14,7 @@ return {
         input = true,
         output = true,
       },
-    }
+    })
 
     vim.keymap.set("n", "<leader>cc", "<cmd>CccPick<cr>")
     vim.keymap.set("n", "<leader>cf", "<cmd>CccConvert<cr>")
