@@ -1,0 +1,23 @@
+# general
+n gerseneck
+
+# allow ports 25565, 25566, 25567 (udp and tcp) in firewall for this to work
+# also allow 5353 udp for mDNS
+p 25565
+
+# video
+h265
+fps 60
+
+# security
+pin
+
+# audio
+vol 1.0
+al 0.0
+
+# fullscreen by default
+fs
+
+# color
+srgb
