@@ -6,7 +6,7 @@ n gerseneck
 p 25565
 
 # video
-h265
+# h265
 fps 60
 
 # security
