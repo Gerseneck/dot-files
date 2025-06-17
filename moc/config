@@ -14,3 +14,5 @@ Theme = mocp_gerseneck_theme
 AutoNext = yes
 PlaylistNumbering = yes
 ShowTime = yes
+Precache = yes
+SoundDriver = ALSA:OSS:JACK
