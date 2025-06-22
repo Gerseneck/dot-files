@@ -1,0 +1,19 @@
+[[mgr.prepend_keymap]]
+on = "y"
+run = [ "plugin copy-file-contents", "yank" ]
+
+[[mgr.prepend_keymap]]
+on = "<C-y>"
+run = "unyank"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
+[[mgr.prepend_keymap]]
+on   = "f"
+run  = "plugin jump-to-char"
+
+[[mgr.prepend_keymap]]
+on = "C"
+run = "plugin ouch"

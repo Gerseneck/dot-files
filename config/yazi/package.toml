@@ -1,0 +1,37 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "42f64c0"
+hash = "e01006bfb38951ea89031bd918b20dbb"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "42f64c0"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "42f64c0"
+hash = "b3f1d6ec3721d4061aad5f69cddb0cf9"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "42f64c0"
+hash = "d2f04875bbd4ed3dd5696e8c4b094fde"
+
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "1ee69a5"
+hash = "63679f3daf8551ff8755be38b5ced0f"
+
+[[plugin.deps]]
+use = "Reledia/glow"
+rev = "bd3eaa5"
+hash = "92b5c58159a51c567f82b618cee2b78"
+
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "71545f4"
+hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
+
+[flavor]
+deps = []

@@ -3,10 +3,9 @@ sort_by = "natural"
 sort_dir_first = true
 show_symlink = true
 scrolloff = 8
-keymap = [
-    { on = "y", run = [ 'for path in "$@"; do echo "file://$path"; done | xclip -i -selection clipboard -t text/uri-list', "yank" ] },
-    { on = "y", run = [ 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] }
-]
+
+[preview]
+tab_size = 4
 
 [open]
 prepend_rules = [
@@ -19,4 +18,22 @@ play = [
 ]
 ebook = [
     { run = 'ebook-viewer "$@"', orphan = true }
+]
+extract = [
+	{ run = 'ouch d -y "$@"' }
+]
+
+[plugin]
+prepend_fetchers = [
+    { id = "git", name = "*", run = "git" },
+    { id = "git", name = "*/", run = "git" }
+]
+prepend_previewers = [
+	{ mime = "application/*zip", run = "ouch" },
+	{ mime = "application/x-tar", run = "ouch" },
+	{ mime = "application/x-bzip2", run = "ouch" },
+	{ mime = "application/x-7z-compressed", run = "ouch" },
+	{ mime = "application/x-rar", run = "ouch" },
+	{ mime = "application/x-xz", run = "ouch" },
+	{ mime = "application/xz", run = "ouch" }
 ]

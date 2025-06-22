@@ -13,3 +13,25 @@ Status:children_add(function(self)
     return ""
   end
 end, 3300, Status.LEFT)
+
+th.git = {
+  modified = ui.Style():fg("blue"),
+  deleted = ui.Style():fg("red"):bold(),
+
+  modified_sign = "[M]",
+  added_sign = "[+]",
+  untracked_sign = "[?]",
+  ignored_sign = "◌",
+  deleted_sign = "[✘]",
+}
+
+require("git"):setup()
+
+require("full-border"):setup({
+  type = ui.Border.ROUNDED,
+})
+
+require("copy-file-contents"):setup({
+  append_char = "\n",
+  notification = true,
+})
