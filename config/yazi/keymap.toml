@@ -11,8 +11,8 @@ on  = "M"
 run = "plugin mount"
 
 [[mgr.prepend_keymap]]
-on   = "f"
-run  = "plugin jump-to-char"
+on = "f"
+run = "plugin jump-to-char"
 
 [[mgr.prepend_keymap]]
 on = "C"
