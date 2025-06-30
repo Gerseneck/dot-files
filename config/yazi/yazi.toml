@@ -8,8 +8,8 @@ scrolloff = 8
 tab_size = 4
 
 [open]
-prepend_rules = [
-    { name = "*.epub", use = "ebook" }
+append_rules = [
+    { mime = "application/epub+zip", use = "ebook" }
 ]
 
 [opener]
@@ -17,7 +17,8 @@ play = [
     { run = 'vlc "$@"', orphan = true }
 ]
 ebook = [
-    { run = 'ebook-viewer "$@"', orphan = true }
+    { run = 'ebook-viewer "$@"', orphan = true },
+    { run = 'flatpak --cmd="ebook-vewier" com.calibre_ebook_calibre "$@"', orphan = true }
 ]
 extract = [
     { run = 'ouch d -y "$@"' }

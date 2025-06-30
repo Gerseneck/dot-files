@@ -17,3 +17,11 @@ run = "plugin jump-to-char"
 [[mgr.prepend_keymap]]
 on = "C"
 run = "plugin ouch"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "G" ]
+run = "toggle_all"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "s" ]
+run = "link"
