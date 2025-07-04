@@ -1,5 +1,5 @@
 [[mgr.prepend_keymap]]
-on = "y"
+on = "<C-y>"
 run = [ "plugin copy-file-contents", "yank" ]
 
 [[mgr.prepend_keymap]]
