@@ -17,5 +17,5 @@ vim.keymap.set("n", "<leader>cl", function()
 
   vim.fn.setreg("+", filename_line_number)
 
-  print(string.format("Yanked current filename (relative) and line number to @+: %s", filename_line_number))
+  print(string.format('Yanked current filename (relative) and line number to register "+: %s', filename_line_number))
 end)
