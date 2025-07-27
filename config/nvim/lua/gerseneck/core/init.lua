@@ -1,3 +1,4 @@
 require("gerseneck.core.set")
-require("gerseneck.core.remap")
+require("gerseneck.core.keymap")
 require("gerseneck.core.autocmd")
+require("gerseneck.core.filetype")
