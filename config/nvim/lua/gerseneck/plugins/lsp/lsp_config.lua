@@ -57,6 +57,7 @@ return {
         "emmet_language_server",
         "html",
         "texlab",
+        "somesass_ls",
       },
     })
 
