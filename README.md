@@ -24,7 +24,7 @@ git clone https://github.com/Gerseneck/dot-files.git
 cd dot-files/
 ```
 
-### Copying the files to the correct directory
+### Copying the files to the correct directory (One Time Installation, No Updates)
 
 ```
 cp -r config/ ~/.config/
