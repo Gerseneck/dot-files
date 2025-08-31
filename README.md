@@ -2,6 +2,10 @@
 
 My configurations for my Linux system. Nothing too fancy, just some configurations that make my life easier.
 
+## Screenshots
+
+![Neovim, Yazi, and Neofetch](assets/screenshot.png)
+
 ## Requirements
 
 - [`Neovim 0.11+`](https://github.com/neovim/neovim)
