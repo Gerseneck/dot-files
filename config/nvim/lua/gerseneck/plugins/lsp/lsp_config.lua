@@ -5,7 +5,6 @@ return {
   dependencies = {
     { "hrsh7th/cmp-nvim-lsp" },
     { "williamboman/mason.nvim" },
-    { "rshkarin/mason-nvim-lint" },
     { "williamboman/mason-lspconfig.nvim" },
   },
   config = function()
@@ -58,12 +57,6 @@ return {
         "html",
         "texlab",
         "somesass_ls",
-      },
-    })
-
-    require("mason-nvim-lint").setup({
-      ensure_installed = {
-        "pylint",
       },
     })
 
