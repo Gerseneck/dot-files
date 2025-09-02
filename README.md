@@ -22,6 +22,7 @@ Clone the repository and `cd` into the directory:
 ```
 git clone https://github.com/Gerseneck/dot-files.git
 cd dot-files/
+git submodule update --init --recursive
 ```
 
 ### Copying the files to the correct directory (One Time Installation, No Updates)
