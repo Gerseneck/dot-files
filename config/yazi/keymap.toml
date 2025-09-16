@@ -25,3 +25,7 @@ run = "toggle_all"
 [[mgr.prepend_keymap]]
 on = [ "g", "s" ]
 run = "link"
+
+[[mgr.prepend_keymap]]
+on = "Z"
+run = "plugin fzf"
