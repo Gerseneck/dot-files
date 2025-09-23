@@ -8,7 +8,6 @@ return {
     { "williamboman/mason-lspconfig.nvim" },
   },
   config = function()
-    local lsp_config = require("lspconfig")
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities.textDocument.completion.completionItem.snippetSupport = true
 
