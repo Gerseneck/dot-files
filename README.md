@@ -37,15 +37,12 @@ or
 
 ### Create a symbolic link to each file (Recommended)
 
-> [!WARNING]
-> Please only do this step once, doing it multiple times will result in the configuration files being in the wrong place.
-
 Creating a symbolic link from the repository allows easy update of the configurations. However, the repository must always exist in the correct location.
 
 ```
-ln -s $(pwd)/config/* ~/.config
-ln -s $(pwd)/moc/ ~/.moc
-ln -s $(pwd)/bash_aliases ~/.bash_aliases
+ln -sfn $(pwd)/config/* ~/.config
+ln -sfn $(pwd)/moc/ ~/.moc
+ln -sfn $(pwd)/bash_aliases ~/.bash_aliases
 ```
 
 ## Sourcing the bash aliases
