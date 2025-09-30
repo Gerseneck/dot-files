@@ -25,6 +25,6 @@ return {
       },
     })
 
-    vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeToggle<cr>", { silent = true, noremap = true })
+    vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeToggle<cr>")
   end,
 }
