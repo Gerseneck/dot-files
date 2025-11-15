@@ -3,24 +3,14 @@
         modifiers: [
             Super,
         ],
-    ): System(WorkspaceOverview),
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "w",
-    ): Close,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "f",
+        key: "slash",
     ): Disable,
     (
         modifiers: [
             Super,
+            Ctrl,
         ],
-        key: "slash",
+        key: "Escape",
     ): Disable,
     (
         modifiers: [
@@ -31,16 +21,21 @@
     (
         modifiers: [
             Super,
-            Ctrl,
         ],
-        key: "r",
-    ): Debug,
+        key: "n",
+    ): Minimize,
     (
         modifiers: [
             Super,
         ],
-        key: "n",
-    ): Minimize,
+        key: "F11",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "w",
+    ): Close,
     (
         modifiers: [
             Super,
@@ -52,20 +47,30 @@
             Super,
             Ctrl,
         ],
-        key: "Escape",
-    ): Disable,
+        key: "r",
+    ): Debug,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "Return",
+        description: Some("Wezterm"),
+    ): Spawn("wezterm"),
     (
         modifiers: [
             Super,
         ],
-        key: "e",
-    ): System(HomeFolder),
+        key: "f",
+    ): Fullscreen,
     (
         modifiers: [
-            Super,
+            Ctrl,
+            Alt,
         ],
-        key: "q",
-    ): Disable,
+        key: "c",
+        description: Some("Qalculate"),
+    ): Spawn("flatpak run io.github.Qalculate"),
     (
         modifiers: [
             Super,
@@ -77,6 +82,17 @@
         modifiers: [
             Super,
         ],
-        key: "F11",
+    ): System(WorkspaceOverview),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "q",
     ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "e",
+    ): System(HomeFolder),
 }
