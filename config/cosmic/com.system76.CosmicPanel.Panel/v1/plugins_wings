@@ -3,6 +3,7 @@ Some(([
     "io.github.cosmic_utils.weather-applet",
 ], [
     "dev.DBrox.CosmicPrivacyIndicator",
+    "net.tropicbliss.CosmicExtAppletCaffeine",
     "com.system76.CosmicAppletStatusArea",
     "com.system76.CosmicAppletNotifications",
     "com.system76.CosmicAppletTiling",
