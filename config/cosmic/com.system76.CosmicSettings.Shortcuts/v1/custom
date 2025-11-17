@@ -95,4 +95,11 @@
         ],
         key: "e",
     ): System(HomeFolder),
+    (
+        modifiers: [
+            Ctrl,
+            Alt
+        ],
+        key: "delete"
+    ): System(LogOut),
 }
