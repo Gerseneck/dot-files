@@ -56,9 +56,25 @@ if [ -f ~/.bash_aliases ]; then
 fi
 ```
 
+## Installing sudo configurations
+
+Run
+
+```
+sudo visudo -f /etc/sudoers.d/gerseneck
+```
+
+then paste the following:
+
+```
+Defaults pwfeedback
+Defaults insults
+Defaults timestamp_timeout=3
+```
+
 ## Installing plugins for Yazi
 
-to install plugins defined in `config/yazi/package.toml`, run
+To install plugins defined in `config/yazi/package.toml`, run
 
 ```
 ya pkg install
