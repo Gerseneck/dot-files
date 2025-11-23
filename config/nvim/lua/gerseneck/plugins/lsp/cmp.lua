@@ -32,7 +32,12 @@ return {
         completeopt = "menu, menuone, noinsert, noselect",
       },
       sources = {
-        { name = "path" },
+        {
+          name = "path",
+          options = {
+            trailing_slash = true,
+          },
+        },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
         { name = "buffer" },
