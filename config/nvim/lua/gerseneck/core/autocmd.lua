@@ -32,12 +32,9 @@ vim.api.nvim_create_autocmd("ExitPre", {
     for _, filename in pairs(files) do
       local path = vim.fs.joinpath(project_dir, filename)
 
-      if vim.fn.filereadable(path) == 0 then
-        goto continue
+      if vim.fn.filereadable(path) == 1 then
+        os.remove(path)
       end
-
-      os.remove(path)
-      ::continue::
     end
   end,
 })
