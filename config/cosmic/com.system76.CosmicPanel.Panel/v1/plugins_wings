@@ -1,6 +1,6 @@
 Some(([
     "com.system76.CosmicAppletWorkspaces",
-    "io.github.cosmic_utils.weather-applet",
+    "com.vintagetechie.CosmicExtAppletTempest",
 ], [
     "dev.DBrox.CosmicPrivacyIndicator",
     "net.tropicbliss.CosmicExtAppletCaffeine",

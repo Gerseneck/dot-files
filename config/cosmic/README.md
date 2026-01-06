@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- [`Simple Weather Applet`](https://github.com/cosmic-utils/cosmic-ext-applet-weather)
+- [`Tempest Weather Applet`](https://codeberg.org/VintageTechie/cosmic-ext-applet-tempest)
 - [`Cosmic Privacy Indicator`](https://github.com/D-Brox/cosmic-ext-applet-privacy-indicator)
 - [`Caffeine Applet`](https://github.com/tropicbliss/cosmic-ext-applet-caffeine)
 
