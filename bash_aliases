@@ -19,3 +19,5 @@ alias trm='trash-remove'
 alias trl='trash-list'
 alias trr='trash-restore'
 alias tre='trash-empty'
+
+alias tty-clock='tty-clock -s -c -C 2'
