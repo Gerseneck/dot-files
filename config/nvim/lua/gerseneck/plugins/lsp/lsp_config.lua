@@ -56,6 +56,7 @@ return {
         "html",
         "texlab",
         "somesass_ls",
+        "marksman",
       },
     })
 

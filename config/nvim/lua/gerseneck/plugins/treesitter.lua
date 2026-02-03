@@ -14,6 +14,7 @@ return {
       "typescript",
       "javascript",
       "markdown",
+      "latex",
     }
 
     treesitter.install(parsers)
@@ -28,6 +29,7 @@ return {
       "typescript",
       "javascript",
       "markdown",
+      "latex",
     }
 
     local treesitter_autogroup = vim.api.nvim_create_augroup("treesitter", { clear = true })
