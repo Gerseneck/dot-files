@@ -1,4 +1,5 @@
 #!/bin/bash
+
 alias vi='nvim'
 alias tmuxnew='tmux new -s'
 alias tattach='tmux attach-session -t'
@@ -21,3 +22,6 @@ alias trr='trash-restore'
 alias tre='trash-empty'
 
 alias tty-clock='tty-clock -s -c -C 2'
+
+# cargo-update update all
+alias cupall='cargo install-update -a'
