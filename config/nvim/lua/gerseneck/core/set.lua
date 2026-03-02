@@ -26,3 +26,6 @@ vim.opt.encoding = "UTF-8"
 vim.opt.laststatus = 2
 vim.opt.signcolumn = "auto"
 vim.opt.termguicolors = true
+
+-- don't automatically resize splits
+vim.opt.equalalways = false
