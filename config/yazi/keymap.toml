@@ -57,3 +57,8 @@ desc = "Go ~/Pictures"
 on = [ "g", "v" ]
 run = "cd ~/Videos"
 desc = "Go ~/Videos"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "e" ]
+run = "cd ~/Desktop"
+desc = "Go ~/Desktop"
