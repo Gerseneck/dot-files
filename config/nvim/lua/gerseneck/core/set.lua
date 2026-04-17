@@ -1,4 +1,4 @@
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
@@ -9,12 +9,6 @@ vim.opt.smartindent = true
 vim.opt.expandtab = true
 
 vim.opt.mouse = "a"
-vim.opt.whichwrap:append({
-  ["<"] = true,
-  [">"] = true,
-  ["["] = true,
-  ["]"] = true,
-})
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
@@ -29,3 +23,5 @@ vim.opt.termguicolors = true
 
 -- don't automatically resize splits
 vim.opt.equalalways = false
+
+vim.g.netrw_banner = 0

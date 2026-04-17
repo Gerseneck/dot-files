@@ -1,5 +1,5 @@
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "html", "lua", "markdown", "dart" },
+  pattern = { "html", "lua", "markdown" },
   callback = function()
     vim.opt_local.shiftwidth = 2
     vim.opt_local.tabstop = 2
@@ -7,6 +7,7 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- stylua: ignore start
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(e)
     local opts = { buffer = e.buffer, remap = false }
@@ -28,8 +29,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
         },
       })
     end, opts)
-  end
+  end,
 })
+-- stylua: ignore end
 
 vim.api.nvim_create_autocmd("ExitPre", {
   callback = function()
