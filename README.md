@@ -8,7 +8,7 @@ My configurations for my Linux system. Nothing too fancy, just some configuratio
 
 ## Requirements
 
-- [`Neovim 0.11+`](https://github.com/neovim/neovim)
+- [`Neovim 0.12+`](https://github.com/neovim/neovim)
 - [`JetBrains Mono Nerd Font`](https://github.com/ryanoasis/nerd-fonts)
 - Latest version of [`Yazi`](https://github.com/sxyazi/yazi)
 - Latest version of [`Manga-tui`](https://github.com/josueBarretogit/manga-tui)
