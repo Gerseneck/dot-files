@@ -68,6 +68,17 @@ vim.api.nvim_create_user_command("PackUp", function(opts)
   end
 end, { nargs = "*", complete = "packadd" })
 
+-- stylua: ignore start
+vim.api.nvim_create_user_command("PackClean", function()
+  local unused = vim.iter(vim.pack.get())
+    :filter(function(plugin) return not plugin.active end) -- find inactive plugins
+    :map(function(plugin) return plugin.spec.name end) -- only get the name
+    :totable() -- turn into table
+
+  vim.pack.del(unused)
+end, { nargs = 0 })
+-- stylua: ignore end
+
 vim.cmd.colorscheme("jellybeans")
 
 plugin_rq("lualine")

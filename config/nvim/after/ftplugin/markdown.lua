@@ -1,6 +1,8 @@
 -- load live-preview only when markdown files open
 vim.cmd.packadd("live-preview.nvim")
 
+local livepreview = require("livepreview")
+
 require("livepreview.config").set({
   port = 5500,
   browser = "default",
@@ -13,5 +15,9 @@ require("livepreview.config").set({
 vim.g.localleader = "\\"
 
 vim.keymap.set("n", "<LocalLeader>p", function()
-  vim.cmd("LivePreview start")
+  if livepreview.is_running() then
+    vim.cmd("LivePreview close")
+  else
+    vim.cmd("LivePreview start")
+  end
 end)
