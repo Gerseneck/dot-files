@@ -47,6 +47,7 @@ require("mason-lspconfig").setup({
     "texlab",
     "somesass_ls",
     "marksman",
+    "harper_ls",
   },
 })
 
