@@ -16,7 +16,7 @@ vim.pack.add({
   { src = gh("nvim-lualine/lualine.nvim") },
 
   -- file navigation
-  { src = gh("nvim-telescope/telescope.nvim"), version = vim.version.range("*") },
+  { src = gh("ibhagwan/fzf-lua") },
   { src = gh("nvim-tree/nvim-tree.lua") },
 
   -- git integration
@@ -24,7 +24,7 @@ vim.pack.add({
   { src = gh("lewis6991/gitsigns.nvim") },
 
   -- quality of life
-  { src = gh("kylechui/nvim-surround") },
+  { src = gh("kylechui/nvim-surround"), version = vim.version.range("4.x") },
   { src = gh("danymat/neogen") },
   { src = gh("laytan/cloak.nvim") },
   { src = gh("uga-rosa/ccc.nvim") },
@@ -83,7 +83,7 @@ vim.cmd.colorscheme("jellybeans")
 
 plugin_rq("lualine")
 
-plugin_rq("telescope")
+plugin_rq("fzf_lua")
 plugin_rq("nvim_tree")
 
 plugin_rq("fugitive")
