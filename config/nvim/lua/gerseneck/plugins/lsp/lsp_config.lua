@@ -39,7 +39,7 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "pyright",
     "jdtls",
-    "ruby_lsp",
+    "solargraph",
     "clangd",
     "ts_ls",
     "emmet_language_server",

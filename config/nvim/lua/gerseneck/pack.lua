@@ -32,6 +32,12 @@ vim.pack.add({
   -- nvim-treesitter
   { src = gh("nvim-treesitter/nvim-treesitter"), version = "main" },
 
+  -- language specific plugins
+  { src = gh("lervag/vimtex") },
+})
+
+-- very lazy loading
+vim.pack.add({
   -- language server
   { src = gh("neovim/nvim-lspconfig") },
   { src = gh("williamboman/mason.nvim") },
@@ -42,12 +48,6 @@ vim.pack.add({
   { src = gh("hrsh7th/cmp-nvim-lsp") },
   { src = gh("hrsh7th/cmp-nvim-lua") },
 
-  -- language specific plugins
-  { src = gh("lervag/vimtex") },
-})
-
--- language specific plugins that doesn't need to be loaded immediately
-vim.pack.add({
   { src = gh("brianhuster/live-preview.nvim") },
 }, { load = function() end })
 
@@ -96,7 +96,26 @@ plugin_rq("ccc")
 
 plugin_rq("treesitter")
 
-plugin_rq("lsp.lsp_config")
-plugin_rq("lsp.cmp")
-
 plugin_rq("vimtex")
+
+local lazy_load = vim.api.nvim_create_augroup("lazy_load", { clear = true })
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  group = lazy_load,
+  callback = function()
+    -- hack to make it load after UI renders
+    vim.fn.timer_start(0, function()
+      vim.cmd.packadd("nvim-lspconfig")
+      vim.cmd.packadd("mason.nvim")
+      vim.cmd.packadd("mason-lspconfig.nvim")
+      vim.cmd.packadd("nvim-cmp")
+      vim.cmd.packadd("cmp-buffer")
+      vim.cmd.packadd("cmp-path")
+      vim.cmd.packadd("cmp-nvim-lsp")
+      vim.cmd.packadd("cmp-nvim-lua")
+
+      plugin_rq("lsp.lsp_config")
+      plugin_rq("lsp.cmp")
+    end)
+  end,
+})

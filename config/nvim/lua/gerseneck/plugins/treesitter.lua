@@ -40,10 +40,21 @@ local filetypes = {
 
 local treesitter_autogroup = vim.api.nvim_create_augroup("treesitter", { clear = true })
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = filetypes,
+vim.api.nvim_create_autocmd("BufEnter", {
   group = treesitter_autogroup,
-  callback = function()
-    vim.treesitter.start()
+  callback = function(event)
+    if not event.buf then
+      return
+    end
+
+    if not vim.tbl_contains(filetypes, vim.bo[event.buf].filetype) then
+      return
+    end
+
+    -- hack to make it load after UI renders
+    vim.fn.timer_start(0, function()
+      vim.treesitter.start()
+      vim.bo[event.buf].syntax = "ON"
+    end)
   end,
 })
