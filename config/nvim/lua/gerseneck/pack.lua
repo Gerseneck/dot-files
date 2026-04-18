@@ -31,6 +31,13 @@ vim.pack.add({
   -- nvim-treesitter
   { src = gh("nvim-treesitter/nvim-treesitter"), version = "main" },
 
+  -- completion
+  { src = gh("hrsh7th/nvim-cmp") },
+  { src = gh("hrsh7th/cmp-buffer") },
+  { src = gh("hrsh7th/cmp-path") },
+  { src = gh("hrsh7th/cmp-nvim-lsp") },
+  { src = gh("hrsh7th/cmp-nvim-lua") },
+
   -- language specific plugins
   { src = gh("lervag/vimtex") },
 })
@@ -41,11 +48,6 @@ vim.pack.add({
   { src = gh("neovim/nvim-lspconfig") },
   { src = gh("williamboman/mason.nvim") },
   { src = gh("williamboman/mason-lspconfig.nvim") },
-  { src = gh("hrsh7th/nvim-cmp") },
-  { src = gh("hrsh7th/cmp-buffer") },
-  { src = gh("hrsh7th/cmp-path") },
-  { src = gh("hrsh7th/cmp-nvim-lsp") },
-  { src = gh("hrsh7th/cmp-nvim-lua") },
 
   { src = gh("brianhuster/live-preview.nvim") },
 }, { load = function() end })
@@ -94,6 +96,8 @@ plugin_rq("cloak")
 
 plugin_rq("treesitter")
 
+plugin_rq("lsp.cmp")
+
 plugin_rq("vimtex")
 
 local lazy_load = vim.api.nvim_create_augroup("lazy_load", { clear = true })
@@ -106,14 +110,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
       vim.cmd.packadd("nvim-lspconfig")
       vim.cmd.packadd("mason.nvim")
       vim.cmd.packadd("mason-lspconfig.nvim")
-      vim.cmd.packadd("nvim-cmp")
-      vim.cmd.packadd("cmp-buffer")
-      vim.cmd.packadd("cmp-path")
-      vim.cmd.packadd("cmp-nvim-lsp")
-      vim.cmd.packadd("cmp-nvim-lua")
 
       plugin_rq("lsp.lsp_config")
-      plugin_rq("lsp.cmp")
     end)
   end,
 })
