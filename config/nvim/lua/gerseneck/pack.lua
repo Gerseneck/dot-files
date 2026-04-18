@@ -27,7 +27,6 @@ vim.pack.add({
   { src = gh("kylechui/nvim-surround"), version = vim.version.range("4.x") },
   { src = gh("danymat/neogen") },
   { src = gh("laytan/cloak.nvim") },
-  { src = gh("uga-rosa/ccc.nvim") },
 
   -- nvim-treesitter
   { src = gh("nvim-treesitter/nvim-treesitter"), version = "main" },
@@ -92,7 +91,6 @@ plugin_rq("gitsigns")
 plugin_rq("nvim_surround")
 plugin_rq("neogen")
 plugin_rq("cloak")
-plugin_rq("ccc")
 
 plugin_rq("treesitter")
 
