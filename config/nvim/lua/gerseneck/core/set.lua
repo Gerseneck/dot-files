@@ -25,3 +25,4 @@ vim.opt.termguicolors = true
 vim.opt.equalalways = false
 
 vim.g.netrw_banner = 0
+vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
