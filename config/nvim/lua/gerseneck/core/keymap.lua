@@ -14,7 +14,7 @@ vim.keymap.set("n", "gG", "ggVG")
 -- yank filename (relative path) and line number to clipboard
 vim.keymap.set("n", "<leader>cl", function()
   local filename = string.len(vim.fn.expand("%")) > 0 and vim.fn.expand("%") or "[Unsaved Buffer]"
-  local filename_line_number =  filename .. ":" .. vim.fn.getcurpos()[2]
+  local filename_line_number = filename .. ":" .. vim.fn.getcurpos()[2]
 
   vim.fn.setreg("+", filename_line_number)
 
