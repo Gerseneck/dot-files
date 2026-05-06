@@ -38,7 +38,7 @@ local filetypes = {
   "latex",
 }
 
-local treesitter_autogroup = vim.api.nvim_create_augroup("treesitter", { clear = true })
+local treesitter_autogroup = vim.api.nvim_create_augroup("treesitter_group", { clear = true })
 
 vim.api.nvim_create_autocmd("BufEnter", {
   group = treesitter_autogroup,
