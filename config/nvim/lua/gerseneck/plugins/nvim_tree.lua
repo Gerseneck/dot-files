@@ -17,6 +17,9 @@ require("nvim-tree").setup({
       },
     },
   },
+  hijack_directories = { enable = false, },
+  disable_netrw = false,
+  hijack_netrw = false,
 })
 
 vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeToggle<cr>")
