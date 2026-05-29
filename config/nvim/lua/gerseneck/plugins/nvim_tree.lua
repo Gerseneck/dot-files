@@ -17,7 +17,7 @@ require("nvim-tree").setup({
       },
     },
   },
-  hijack_directories = { enable = false, },
+  hijack_directories = { enable = false },
   disable_netrw = false,
   hijack_netrw = false,
 })
