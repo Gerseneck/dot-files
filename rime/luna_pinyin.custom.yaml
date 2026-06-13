@@ -1,0 +1,4 @@
+patch:
+  "key_binder/bindings/+":
+    - {accept: "Control+Shift+f", toggle: simplification, when: always}
+    - {accept: "Control+Shift+F", toggle: simplification, when: always}
