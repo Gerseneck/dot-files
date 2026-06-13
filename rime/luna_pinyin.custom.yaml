@@ -2,3 +2,16 @@ patch:
   "key_binder/bindings/+":
     - {accept: "Control+Shift+f", toggle: simplification, when: always}
     - {accept: "Control+Shift+F", toggle: simplification, when: always}
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: ["中文", "西文"]
+    - name: full_shape
+      states: ["半角", "全角"]
+      reset: 0
+    - name: simplification
+      states: ["漢字", "汉字"]
+      reset: 1
+    - name: ascii_punct
+      states: ["。，", "．，"]
+      reset: 0
