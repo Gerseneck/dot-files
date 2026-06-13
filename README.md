@@ -51,7 +51,9 @@ ln -sfn $(pwd)/bash_aliases ~/.bash_aliases
 Depending on the version of rime you are using, the config directory is different:
 
 `ibus`: `~/.config/ibus/rime/`
+
 `fcitx`: `~/.config/fcitx/rime/`
+
 `fcitx5`: `~/.local/share/fcitx5/rime/`
 
 Copy or symlink the config files to the correct directory.
