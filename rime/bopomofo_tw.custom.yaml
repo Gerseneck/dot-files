@@ -9,3 +9,4 @@ patch:
     - options: [zh_hant, zh_hans, zh_hant_tw]
       reset: 2
       states: ["傳統漢字", "简化字", "臺灣字形"]
+  translator/dictionary: terra_pinyin.ext

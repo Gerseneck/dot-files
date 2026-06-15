@@ -10,6 +10,7 @@ patch:
   schema_list:
     - schema: luna_pinyin
     - schema: bopomofo_tw
+    - schema: combo_pinyin
   switcher/abbreviate_options: false
   "switcher/hotkeys/+":
     - "Control+Shift+s"

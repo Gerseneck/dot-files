@@ -1,0 +1,10 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: custom_terra
+version: "0"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
