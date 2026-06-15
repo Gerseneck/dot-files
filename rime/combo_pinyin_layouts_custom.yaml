@@ -1,0 +1,15 @@
+gerseneck_layout:
+  alphabet: 'aqzswxdecfrvjum kilogtbhynp'
+  algebra:
+    - 'xlit|aqzswxdecfrvjum kilogtbhynp|SCZHLFGDBKTPIUVANREOXXXXXXX|'
+    - 'xform/^A$/ /'
+    - xform/X+//
+  output_format: { __include: combo_pinyin_layouts:/validate_syllable }
+  prompt_format: { __include: combo_pinyin_layouts:/combo_display_format }
+
+use_gerseneck_layout:
+  chord_composer: { __include: gerseneck_layout }
+  __patch:
+    - combo_pinyin_briefs:/patch?
+    - chord_composer/algebra/+: { __include: combo_pinyin_layouts:/default_layout_initial_rules }
+    - chord_composer/algebra/+: { __include: combo_pinyin_layouts:/rime_rules }

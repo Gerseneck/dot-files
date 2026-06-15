@@ -14,3 +14,8 @@ patch:
       states: ["。，", "．，"]
       reset: 0
   translator/dictionary: luna_pinyin.ext
+  __patch:
+    - combo_pinyin_layouts_custom:/use_gerseneck_layout
+    - combo_pinyin_layouts:/use_return_to_commit_raw_input
+    - grammar:/hant?
+    - combo_pinyin.custom:/patch?
