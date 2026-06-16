@@ -1,8 +1,8 @@
 gerseneck_layout:
-  alphabet: 'aqzswxdecfrvjum kilogtbhynp'
+  alphabet: "aqzswxdecfrvjum kilogtbhynp"
   algebra:
-    - 'xlit|aqzswxdecfrvjum kilogtbhynp|SCZHLFGDBKTPIUVANREOXXXXXXX|'
-    - 'xform/^A$/ /'
+    - "xlit|aqzswxdecfrvjum kilogtbhynp|SCZHLFGDBKTPIUVANREOXXXXXXX|"
+    - "xform/^A$/ /"
     - xform/X+//
   output_format: { __include: combo_pinyin_layouts:/validate_syllable }
   prompt_format: { __include: combo_pinyin_layouts:/combo_display_format }

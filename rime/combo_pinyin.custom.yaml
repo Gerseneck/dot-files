@@ -21,7 +21,7 @@ patch:
   zh_hans:
     opencc_config: t2s.json
     option_name: zh_hans
-    tips: all
+    tips: none
   zh_hant_tw:
     opencc_config: t2tw.json
     option_name: zh_hant_tw
