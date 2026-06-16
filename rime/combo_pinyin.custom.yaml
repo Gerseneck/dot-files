@@ -1,19 +1,31 @@
 patch:
+  engine/filters:
+    - "simplifier@zh_hans"
+    - "simplifier@zh_hant_tw"
+    - uniquifier
   switches:
     - abbrev: ["中", "A"]
       name: ascii_mode
       reset: 0
       states: ["中文", "西文"]
     - name: full_shape
+      reset: 0
       states: ["半角", "全角"]
-      reset: 0
-    - name: simplification
-      states: ["漢字", "汉字"]
-      reset: 0
+    - options: [zh_hant, zh_hans, zh_hant_tw]
+      reset: 2
+      states: ["傳統漢字", "简化字", "臺灣字形"]
     - name: ascii_punct
-      states: ["。，", "．，"]
       reset: 0
+      states: ["。，", "．，"]
   translator/dictionary: luna_pinyin.ext
+  zh_hans:
+    opencc_config: t2s.json
+    option_name: zh_hans
+    tips: all
+  zh_hant_tw:
+    opencc_config: t2tw.json
+    option_name: zh_hant_tw
+    tips: none
   __patch:
     - combo_pinyin_layouts_custom:/use_gerseneck_layout
     - combo_pinyin_layouts:/use_return_to_commit_raw_input
