@@ -6,7 +6,7 @@ patch:
     Control_R: noop
     Shift_L: noop
     Shift_R: commit_code
-  menu/page_size: 6
+  menu/page_size: 8
   schema_list:
     - schema: luna_pinyin
     - schema: bopomofo_tw
