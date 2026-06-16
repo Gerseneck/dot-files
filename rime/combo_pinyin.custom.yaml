@@ -11,7 +11,8 @@ patch:
     - name: full_shape
       reset: 0
       states: ["半角", "全角"]
-    - options: [zh_hant, zh_hans, zh_hant_tw]
+    - abbrev: ["漢", "简", "臺"]
+      options: ["zh_hant", "zh_hans", "zh_hant_tw"]
       reset: 2
       states: ["傳統漢字", "简化字", "臺灣字形"]
     - name: ascii_punct

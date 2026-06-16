@@ -1,15 +1,20 @@
 patch:
+  engine/filter:
+    - simplifier
+    - uniquifier
   "key_binder/bindings/+":
     - { accept: "Control+Shift+f", toggle: simplification, when: always }
     - { accept: "Control+Shift+F", toggle: simplification, when: always }
   switches:
-    - name: ascii_mode
+    - abbrev: ["中", "Ａ"]
+      name: ascii_mode
       reset: 0
       states: ["中文", "西文"]
     - name: full_shape
       reset: 0
       states: ["半角", "全角"]
-    - name: simplification
+    - abbrev: ["漢", "简"]
+      name: simplification
       reset: 1
       states: ["漢字", "汉字"]
     - name: ascii_punct
