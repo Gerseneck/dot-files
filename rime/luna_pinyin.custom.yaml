@@ -2,11 +2,6 @@ patch:
   engine/filters:
     - simplifier
     - uniquifier
-  "key_binder/bindings/+":
-    - { accept: "Control+Shift+4", toggle: simplification, when: always }
-    - { accept: "Control+Shift+dollar", toggle: simplification, when: always }
-    - { accept: "Control+Shift+f", toggle: simplification, when: always }
-    - { accept: "Control+Shift+F", toggle: simplification, when: always }
   switches:
     - abbrev: ["中", "Ａ"]
       name: ascii_mode
