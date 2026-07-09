@@ -26,12 +26,12 @@ extract = [
 
 [plugin]
 prepend_fetchers = [
-    { id = "git", name = "*", run = "git" },
-    { id = "git", name = "*/", run = "git" }
+    { group = "git", url = "*", run = "git" },
+    { group = "git", url = "*/", run = "git" }
 ]
 prepend_previewers = [
-    { name = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
-    { name = "*.markdown", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+    { url = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+    { url = "*.markdown", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
     { mime = "application/epub+zip", run = "epub-preview" },
     { mime = "application/*zip", run = "ouch" },
     { mime = "application/x-tar", run = "ouch" },
