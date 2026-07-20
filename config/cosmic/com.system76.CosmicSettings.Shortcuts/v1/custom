@@ -1,29 +1,12 @@
 {
     (
         modifiers: [
-            Super,
-        ],
-        key: "slash",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
             Ctrl,
-        ],
-        key: "Escape",
-    ): Disable,
-    (
-        modifiers: [
             Alt,
         ],
-        key: "F4",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "n",
-    ): Minimize,
+        key: "c",
+        description: Some("Qalculate"),
+    ): Spawn("flatpak run io.github.Qalculate"),
     (
         modifiers: [
             Super,
@@ -33,22 +16,23 @@
     (
         modifiers: [
             Super,
+            Shift,
         ],
-        key: "w",
-    ): Close,
+        key: "c",
+    ): Spawn("flatpak run io.github.Qalculate"),
     (
         modifiers: [
             Super,
         ],
-        key: "d",
-    ): System(Launcher),
+        key: "XF86LaunchA",
+    ): System(WorkspaceOverview),
     (
         modifiers: [
-            Super,
             Ctrl,
+            Alt,
         ],
-        key: "r",
-    ): Debug,
+        key: "Delete",
+    ): System(LogOut),
     (
         modifiers: [
             Super,
@@ -61,16 +45,35 @@
         modifiers: [
             Super,
         ],
-        key: "f",
-    ): Fullscreen,
+    ): System(WorkspaceOverview),
     (
         modifiers: [
-            Ctrl,
-            Alt,
+            Super,
         ],
-        key: "c",
-        description: Some("Qalculate"),
-    ): Spawn("flatpak run io.github.Qalculate"),
+        key: "w",
+    ): Close,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "slash",
+    ): Disable,
+    (
+        modifiers: [],
+        key: "XF86LaunchA",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "d",
+    ): System(Launcher),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "n",
+    ): Minimize,
     (
         modifiers: [
             Super,
@@ -81,8 +84,37 @@
     (
         modifiers: [
             Super,
+            Shift,
         ],
-    ): System(WorkspaceOverview),
+        key: "b",
+        description: Some("Private Firefox"),
+    ): Spawn("firefox --private-window"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "space",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "r",
+    ): Debug,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "Escape",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "f",
+    ): Fullscreen,
     (
         modifiers: [
             Super,
@@ -97,9 +129,8 @@
     ): System(HomeFolder),
     (
         modifiers: [
-            Ctrl,
-            Alt
+            Alt,
         ],
-        key: "delete"
-    ): System(LogOut),
+        key: "F4",
+    ): Disable,
 }

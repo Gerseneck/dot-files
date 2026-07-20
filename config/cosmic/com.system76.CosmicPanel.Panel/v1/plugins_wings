@@ -1,13 +1,13 @@
 Some(([
+    "io.github.franz_net.CosmicExtAppletFlux",
     "com.system76.CosmicAppletWorkspaces",
     "com.vintagetechie.CosmicExtAppletTempest",
 ], [
     "dev.DBrox.CosmicPrivacyIndicator",
-    "net.tropicbliss.CosmicExtAppletCaffeine",
     "com.system76.CosmicAppletStatusArea",
+    "com.github.bgub.CosmicExtAppletVigil",
     "com.system76.CosmicAppletNotifications",
     "com.system76.CosmicAppletTiling",
-    "com.system76.CosmicAppletInputSources",
     "com.system76.CosmicAppletNetwork",
     "com.system76.CosmicAppletBluetooth",
     "com.system76.CosmicAppletAudio",

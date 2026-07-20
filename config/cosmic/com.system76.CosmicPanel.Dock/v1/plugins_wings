@@ -1,1 +1,5 @@
-None
+Some(([
+    "io.github.crocodile.cosmic-ext-applet-workspace-icons",
+], [
+    "io.github.franz_net.CosmicExtAppletFlux",
+]))

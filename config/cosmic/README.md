@@ -1,12 +1,15 @@
-# Cosmic dots
+# COSMIC Desktop Environment Configuration
 
 ## Screenshot
+
+![Neovim, Neofetch, and COSMIC Settings on COSMIC Desktop](../../assets/comsic.png)
 
 ## Requirements
 
 - [`Tempest Weather Applet`](https://codeberg.org/VintageTechie/cosmic-ext-applet-tempest)
 - [`Cosmic Privacy Indicator`](https://github.com/D-Brox/cosmic-ext-applet-privacy-indicator)
-- [`Caffeine Applet`](https://github.com/tropicbliss/cosmic-ext-applet-caffeine)
+- [`Vigil`](https://github.com/cosmic-utils/cosmic-ext-applet-vigil)
+- [`Flux`](github.com/franz-net/cosmic-ext-flux)
 
 ## Installing
 
