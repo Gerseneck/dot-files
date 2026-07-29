@@ -3,6 +3,9 @@ patch:
     - "simplifier@zh_hans"
     - "simplifier@zh_hant_tw"
     - uniquifier
+  "key_binder/bindings/+":
+    - { accept: "Control+Shift+f", toggle: zh_hans, when: always }
+    - { accept: "Control+Shift+F", toggle: zh_hans, when: always }
   switches:
     - abbrev: ["中", "A"]
       name: ascii_mode

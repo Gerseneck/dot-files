@@ -20,4 +20,4 @@ patch:
     - name: ascii_punct
       reset: 0
       states: ["。，", "．，"]
-  translator/dictionary: luna_pinyin.ext
+  translator/dictionary: terra_pinyin.ext
