@@ -1,6 +1,11 @@
 local fzf_lua = require("fzf-lua")
 
 fzf_lua.setup({
+  grep = {
+    actions = {
+      ["ctrl-q"] = { fn = fzf_lua.actions.file_sel_to_qf, prefix = "select-all+" },
+    },
+  },
   window = {
     file_icon_padding = " ",
   },
