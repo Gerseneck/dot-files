@@ -1,0 +1,135 @@
+{
+    "layer": "top",
+    "height": 25,
+    "spacing": 2,
+    "modules-left": [
+        "mango/workspaces",
+        "mango/layout"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/notification"
+    ],
+    "modules-right": [
+        "tray",
+        "network",
+        "temperature",
+        "pulseaudio",
+        "backlight",
+        "battery"
+    ],
+    "mango/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "hide-empty": true,
+        "on-click-right": "toggle",
+        "overview-label": "總",
+        "format-icons": {
+            // "1": "甲",
+            // "2": "乙",
+            // "3": "丙",
+            // "4": "丁",
+            // "5": "戊",
+            // "6": "己",
+            // "7": "庚",
+            // "8": "辛",
+            // "9": "壬",
+            // "10": "癸"
+            "1": "壹",
+            "2": "贰",
+            "3": "叁",
+            "4": "肆",
+            "5": "伍",
+            "6": "陆",
+            "7": "柒",
+            "8": "捌",
+            "9": "玖",
+            "10": "拾"
+        }
+    },
+    "mango/layout": {
+        "format": "{}"
+    },
+    "network": {
+        "interval": 2,
+        "format-wifi": "\uf1eb  {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-linked": "\uf059 No IP ({ifname})",
+        "format-disconnected": "\uf071 Disconnected",
+        "tooltip-format": "{ipaddr}/{cidr} via {gwaddr}",
+        "format-alt": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}"
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": " {:%T}",
+        "format-alt": " {:L%A, %F}",
+        "tooltip-format": "{:L%A, %F, %T}",
+        "interval": 1
+    },
+    "temperature": {
+        "critical-threshold": 90,
+        "format": "{icon} {temperatureC}°C",
+        "tooltip": true,
+        "tooltip-format": "{temperatureF}°F",
+        "format-icons": ["", "", ""]
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰖔", "󰖨"],
+        "on-click": "brightnessctl set 50%"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<sup></sup>",
+            "none": "  ",
+            "dnd-notification": "<sup></sup>",
+            "dnd-none": "",
+            "inhibited-notification": "<sup></sup>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<sup></sup>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    }
+}
