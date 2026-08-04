@@ -4,7 +4,8 @@
     "spacing": 2,
     "modules-left": [
         "mango/workspaces",
-        "mango/layout"
+        "mango/layout",
+        "mango/keymode"
     ],
     "modules-center": [
         "clock",
@@ -48,6 +49,9 @@
         }
     },
     "mango/layout": {
+        "format": "{}"
+    },
+    "mango/keymode": {
         "format": "{}"
     },
     "network": {

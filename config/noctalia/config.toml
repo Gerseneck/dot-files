@@ -1,0 +1,22 @@
+[bar.default]
+position = "top"
+radius = 0
+concave_edge_corners = false
+margin_ends = 0
+enabled = true
+capsule_radius = 8.0
+shadow = false
+contact_shadow = false
+
+start = ["workspaces", "mangowm-status"]
+center = ["clock", "notifications"]
+end = ["tray", "caffeine", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session"]
+
+[dock]
+shadow = false
+
+[shell.panel]
+shadow = false
+
+[plugins]
+enabled = [ "x0d7x/mangowm-status" ]
