@@ -5,5 +5,9 @@ tooltip_format = "{:%A, %B %d, %Y}"
 [widget.network]
 show_label = false
 
+[widget.workspaces]
+style = "regular"
+label_source = "name"
+
 [widget.mangowm-status]
 type = "x0d7x/mangowm-status:status"

@@ -1,5 +1,13 @@
+[include]
+files = [
+    "services.toml",
+    "theme.toml",
+    "widgets.toml",
+]
+
 [bar.default]
 position = "top"
+background_opacity = 0.25
 radius = 0
 concave_edge_corners = false
 margin_ends = 0
@@ -15,8 +23,31 @@ end = ["tray", "caffeine", "clipboard", "network", "bluetooth", "volume", "brigh
 [dock]
 shadow = false
 
+[shell]
+button_borders = true
+input_borders = true
+popup_borders = true
+card_borders = true
+popup_shadows = true
+font_family = "sans-serif"
+telemetry_enabled = false
+setup_wizard_enabled = false
+settings_show_advanced = true
+
 [shell.panel]
 shadow = false
+
+[shell.screenshot]
+save_to_file = true
+directory = "~/Pictures/Screenshots/"
+filename_pattern = ""
+copy_to_clipboard = true
+freeze_screen = true
+confirm_region = true
+remember_last_region = true
+
+[osd]
+background_opacity = 0.5
 
 [plugins]
 enabled = [ "x0d7x/mangowm-status" ]

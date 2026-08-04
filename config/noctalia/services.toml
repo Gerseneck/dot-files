@@ -1,0 +1,19 @@
+[battery]
+warning_threshold = 10
+
+[location]
+auto_locate = true
+
+[nightlight]
+enabled = true
+force = false
+temperature_day = 6500
+temperature_night = 4000
+
+[notification]
+enable_daemon = true
+show_app_name = true
+show_actions = true
+position = "top-right"
+layer = "top"
+background_opacity = 0.25
