@@ -1,3 +1,6 @@
+[desktop_widgets]
+enabled = false
+
 [widget.clock]
 format = "{:%Y-%m-%d}  {:%H:%M:%S}"
 tooltip_format = "{:%A, %B %d, %Y}"

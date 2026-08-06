@@ -8,7 +8,7 @@ auto_locate = true
 enabled = true
 force = false
 temperature_day = 6500
-temperature_night = 4000
+temperature_night = 2500
 
 [notification]
 enable_daemon = true
@@ -16,4 +16,4 @@ show_app_name = true
 show_actions = true
 position = "top-right"
 layer = "top"
-background_opacity = 0.25
+background_opacity = 0.5
