@@ -25,3 +25,7 @@ alias tty-clock='tty-clock -s -c -C 2'
 
 # cargo-update update all
 alias cupall='cargo install-update -a'
+
+# opensuse tumbleweed aliases
+alias zypup='sudo zypper refresh && sudo zypper update'
+alias zypsearch='sudo zypper search --provides'
