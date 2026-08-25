@@ -24,6 +24,11 @@ run = "plugin ouch"
 desc = "Compress with ouch"
 
 [[mgr.prepend_keymap]]
+on = [ "c", "m" ]
+run = "plugin chmod"
+desc = "Chmod on selected files"
+
+[[mgr.prepend_keymap]]
 on = [ "g", "G" ]
 run = "toggle_all"
 desc = "Invert selection of all files"
