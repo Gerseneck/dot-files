@@ -51,17 +51,6 @@ Status:children_add(function()
   return ui.Line(elements)
 end, 500, Status.RIGHT)
 
-th.git = {
-  modified = ui.Style():fg("blue"),
-  deleted = ui.Style():fg("red"):bold(),
-
-  modified_sign = "[M]",
-  added_sign = "[+]",
-  untracked_sign = "[?]",
-  ignored_sign = "◌",
-  deleted_sign = "[✘]",
-}
-
 require("git"):setup()
 
 require("full-border"):setup({

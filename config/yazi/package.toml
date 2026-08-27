@@ -1,46 +1,46 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "8cd50c6"
-hash = "88e56a64b7ce7c4314427452343fef17"
+rev = "c591a36"
+hash = "5bb0bfab901d3601c370eafdd66edd31"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "8cd50c6"
-hash = "7b625412411be411153886894d9acaf"
+rev = "c591a36"
+hash = "f281261ff04ad7ec867c3f802a50835f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "8cd50c6"
-hash = "e3260d0b1feded8c8e3ae3afa1169e30"
+rev = "c591a36"
+hash = "b95f898e6dc60b52edbc415952e14395"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "8cd50c6"
+rev = "c591a36"
 hash = "7a4b4237223aaa94e589d1c01a23542a"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "406ce6c"
-hash = "f5afc904d5106ee368c8aa2ded43bd74"
+rev = "cfe4f50"
+hash = "eff5702573b6cfba61e4ac8b1969629a"
 
 [[plugin.deps]]
 use = "AnirudhG07/plugins-yazi:copy-file-contents"
-rev = "71545f4"
-hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
+rev = "3f4f1a3"
+hash = "421263a8558fbd2fdb07a75f074cc6e3"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "8cd50c6"
-hash = "e0d59bd47866a6a574c74574097e5070"
+rev = "c591a36"
+hash = "45a533508a9840cc5a10cf6129f63e6a"
 
 [[plugin.deps]]
 use = "kirasok/epub-preview"
-rev = "2e8079e"
-hash = "46037d1e5d2e1fa7e155babbf8e49812"
+rev = "8d894db"
+hash = "d972564b42bb6c1c830b635d9ffc3d27"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "044c3cc"
+rev = "c591a36"
 hash = "87472b05a8c420100f6a2b9cde1e7746"
 
 [[plugin.deps]]
