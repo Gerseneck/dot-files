@@ -20,9 +20,6 @@ ebook = [
     { run = 'ebook-viewer "$@"', orphan = true },
     { run = 'flatpak --cmd="ebook-vewier" com.calibre_ebook_calibre "$@"', orphan = true }
 ]
-extract = [
-    { run = 'ouch d -y "$@"' }
-]
 
 [plugin]
 prepend_fetchers = [
