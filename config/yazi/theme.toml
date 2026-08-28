@@ -1,8 +1,8 @@
 [git]
 unstaged = { fg = "blue" }
 deleted = { fg = "red", bold = true }
-modified_sign = "[M]"
 added_sign = "[+]"
+unstaged_sign = "[M]"
 untracked_sign = "[?]"
 ignored_sign = "◌"
 deleted_sign = "[✘]"
