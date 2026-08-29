@@ -14,11 +14,14 @@ append_rules = [
 
 [opener]
 play = [
-    { run = 'vlc "$@"', orphan = true }
+    { run = 'vlc "%s"', orphan = true }
 ]
 ebook = [
-    { run = 'ebook-viewer "$@"', orphan = true },
-    { run = 'flatpak --cmd="ebook-vewier" com.calibre_ebook_calibre "$@"', orphan = true }
+    { run = 'ebook-viewer "%s"', orphan = true },
+    { run = 'flatpak --cmd="ebook-vewier" com.calibre_ebook_calibre "%s"', orphan = true }
+]
+extract = [
+    { run = 'ouch d -y "%s"', desc = "Extract here with ouch" }
 ]
 
 [plugin]
