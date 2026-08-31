@@ -2,6 +2,7 @@
 unstaged = { fg = "blue" }
 deleted = { fg = "red", bold = true }
 added_sign = "[+]"
+staged_sign = "[+]"
 unstaged_sign = "[M]"
 untracked_sign = "[?]"
 ignored_sign = "◌"
