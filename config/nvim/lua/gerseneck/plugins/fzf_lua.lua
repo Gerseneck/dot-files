@@ -1,6 +1,15 @@
 local fzf_lua = require("fzf-lua")
 
 fzf_lua.setup({
+  files = {
+    absolute_path = false,
+    color_icons = true,
+    file_icons = true,
+    git_icons = true,
+    hidden = true,
+    multiprocesses = true,
+    no_ignore = true,
+  },
   grep = {
     actions = {
       ["ctrl-q"] = { fn = fzf_lua.actions.file_sel_to_qf, prefix = "select-all+" },
@@ -10,11 +19,15 @@ fzf_lua.setup({
     file_icon_padding = " ",
   },
   winopts = {
-    treesitter = { enabled = true },
+    border = "rounded",
     preview = {
-      wrap = true,
+      border = "rounded",
       scrollbar = false,
+      title_pos = "center",
+      title = true,
+      wrap = true,
     },
+    treesitter = { enabled = true },
   },
 })
 
