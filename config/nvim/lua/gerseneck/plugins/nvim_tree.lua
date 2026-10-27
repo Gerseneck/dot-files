@@ -1,4 +1,15 @@
 require("nvim-tree").setup({
+  diagnostics = {
+    enable = false,
+  },
+  filters = {
+    git_ignored = false,
+    dotfiles = false,
+  },
+  git = {
+    enable = true,
+    ignore = false,
+  },
   renderer = {
     icons = {
       show = {
@@ -12,7 +23,7 @@ require("nvim-tree").setup({
           renamed = "[R]",
           untracked = "[?]",
           deleted = "[✘]",
-          ignored = nil,
+          ignored = "◌",
         },
       },
     },
